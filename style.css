@@ -1,0 +1,42 @@
+:root{
+    --mainnavy: #022c48;
+    --lightorange: #ffd3bf;
+    --lightpink: #fbeee8;
+
+    --fontL: 40px;
+    --fontS: 20px;
+}
+
+/* font */
+@font-face {
+    font-family: 'Noteworthy-Bold';
+    src:url('../fonts/Noteworthy-Bold-02.ttf');
+}
+@font-face {
+    font-family: 'Noteworthy-Light';
+    src:url('../fonts/Noteworthy-Light-01.ttf');
+}
+@font-face {
+    font-family: 'UtsukushiFONT';
+    src:url('../fonts/UtsukushiFONT.otf');
+}
+
+header{
+    position: fixed;
+    top: 3%;
+    right: 3%;
+    background-color: var(--lightpink);
+    border: 1px var(--mainnavy) solid;
+    border-radius: 25px;
+    padding: 0.5vw 2vw;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.3);
+}
+
+header a{
+    display: inline;
+    font-family: 'Noteworthy-Light';
+    font-size: var(--fontS);
+    color: var(--mainnavy);
+    text-decoration: none;
+    padding: 0 1vw;
+}
