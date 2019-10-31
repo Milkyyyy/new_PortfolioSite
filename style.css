@@ -4,7 +4,7 @@
     --lightpink: #fbeee8;
 
     --fontL: 40px;
-    --fontS: 20px;
+    --fontS: 15px;
 
     --fontTitle: 80px;
 }
@@ -12,15 +12,15 @@
 /* font */
 @font-face {
     font-family: 'Noteworthy-Bold';
-    src:url('../fonts/Noteworthy-Bold-02.ttf');
+    src:url('./fonts/Noteworthy-Bold-02.ttf');
 }
 @font-face {
     font-family: 'Noteworthy-Light';
-    src:url('../fonts/Noteworthy-Light-01.ttf');
+    src:url('./fonts/Noteworthy-Light-01.ttf');
 }
 @font-face {
     font-family: 'UtsukushiFONT';
-    src:url('../fonts/UtsukushiFONT.otf');
+    src:url('./fonts/UtsukushiFONT.otf');
 }
 
 header{
@@ -52,7 +52,7 @@ header a{
 
 .title{
     position: absolute;
-    top: 50vh;
+    top: 40vh;
     left: 10vw;
     color: var(--mainnavy);
     z-index: 2;
@@ -71,13 +71,67 @@ header a{
 
 .top_image{
     width: 60%;
-    height: auto;
+    height: 80%;
     position: absolute;
     top: 15vh;
     right: 8vw;
+    height: 80%;
+    
 }
 
 .top_image img{
     width: 100%;
+    height: 100%;
+    object-fit: cover;   
+}
 
+nav{
+    width: 100vw;
+    height: calc(var(--fontS) * 2);
+    margin-top: 2vh;
+}
+
+ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+li{
+    width: calc(100vw/4);
+    height: 100%;
+    background-color: var(--lightorange);
+    border: 1px white solid;
+    color: var(--mainnavy);
+    font-size: var(--fontS);
+    font-family: 'Noteworthy-Light';
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutMe{
+    width: 100vw;
+    text-align: center;
+}
+
+.my_name{
+    font-size: var(--fontL);
+    color: var(--mainnavy);
+    font-family: 'UtsukushiFONT';
+    margin: 4vh 0;
+}
+
+.my_introduction{
+    font-size: var(--fontS);
+    color: var(--mainnavy);
+    font-family: 'UtsukushiFONT';
+    margin-bottom: 4vh;
+}
+
+.works{
+    width: 100%;
+    background-color: var(--mainnavy);
 }
