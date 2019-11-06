@@ -1,137 +1,219 @@
-:root{
-    --mainnavy: #022c48;
-    --lightorange: #ffd3bf;
-    --lightpink: #fbeee8;
-
-    --fontL: 40px;
-    --fontS: 15px;
-
-    --fontTitle: 80px;
-}
-
 /* font */
 @font-face {
-    font-family: 'Noteworthy-Bold';
-    src:url('./fonts/Noteworthy-Bold-02.ttf');
+  font-family: 'Noteworthy-Bold';
+  src: url("./fonts/Noteworthy-Bold-02.ttf");
 }
+
 @font-face {
-    font-family: 'Noteworthy-Light';
-    src:url('./fonts/Noteworthy-Light-01.ttf');
+  font-family: 'Noteworthy-Light';
+  src: url("./fonts/Noteworthy-Light-01.ttf");
 }
+
 @font-face {
-    font-family: 'UtsukushiFONT';
-    src:url('./fonts/UtsukushiFONT.otf');
+  font-family: 'UtsukushiFONT';
+  src: url("./fonts/UtsukushiFONT.otf");
 }
 
-header{
-    position: fixed;
-    top: 3%;
-    right: 3%;
-    background-color: var(--lightpink);
-    border: 1px var(--mainnavy) solid;
-    border-radius: 25px;
-    padding: 0.5vw 2vw;
-    box-shadow: 0px 3px 10px rgba(0,0,0,0.3);
-    z-index: 5;
+header {
+  position: fixed;
+  top: 3%;
+  right: 3%;
+  background-color: #fbeee8;
+  border: 1px #022c48 solid;
+  border-radius: 25px;
+  padding: 0.5vw 2vw;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+  z-index: 5;
 }
 
-header a{
-    display: inline;
-    font-family: 'Noteworthy-Light';
-    font-size: var(--fontS);
-    color: var(--mainnavy);
-    text-decoration: none;
-    padding: 0 1vw;
+header a {
+  display: inline;
+  font-family: 'Noteworthy-Light';
+  font-size: 15px;
+  color: #022c48;
+  text-decoration: none;
+  padding: 0 1vw;
 }
 
-.top{
-    width: 100vw;
-    height: 85vh;
-    position: relative;
+.top {
+  width: 100vw;
+  height: 85vh;
+  position: relative;
 }
 
-.title{
-    position: absolute;
-    top: 40vh;
-    left: 10vw;
-    color: var(--mainnavy);
-    z-index: 2;
-    text-align: center;
+.top .title {
+  position: absolute;
+  top: 40vh;
+  left: 10vw;
+  color: #022c48;
+  z-index: 2;
+  text-align: center;
 }
 
-.main_title{
-    font-family: 'Noteworthy-Bold';
-    font-size: var(--fontTitle);
+.top .title .main_title {
+  font-family: 'Noteworthy-Bold';
+  font-size: 80px;
 }
 
-.sub_title{
-    font-family: 'Noteworthy-Light';
-    font-size: var(--fontL);
+.top .title .sub_title {
+  font-family: 'Noteworthy-Light';
+  font-size: 35px;
 }
 
-.top_image{
-    width: 60%;
-    height: 80%;
-    position: absolute;
-    top: 15vh;
-    right: 8vw;
-    height: 80%;
-    
+.top .top_image {
+  width: 60%;
+  height: 80%;
+  position: absolute;
+  top: 15vh;
+  right: 8vw;
+  height: 80%;
 }
 
-.top_image img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;   
+.top .top_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-nav{
-    width: 100vw;
-    height: calc(var(--fontS) * 2);
-    margin-top: 2vh;
+nav {
+  width: 100vw;
+  height: calc($fontM * 2);
+  margin-top: 2vh;
 }
 
-ul{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
+nav ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-li{
-    width: calc(100vw/4);
-    height: 100%;
-    background-color: var(--lightorange);
-    border: 1px white solid;
-    color: var(--mainnavy);
-    font-size: var(--fontS);
-    font-family: 'Noteworthy-Light';
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+nav ul li {
+  width: calc(100vw/4);
+  height: 100%;
+  background-color: #ffd3bf;
+  border: 1px white solid;
+  color: #022c48;
+  font-size: 25px;
+  font-family: 'Noteworthy-Light';
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.aboutMe{
-    width: 100vw;
-    text-align: center;
+nav ul li a {
+  text-decoration: none;
+  color: #022c48;
 }
 
-.my_name{
-    font-size: var(--fontL);
-    color: var(--mainnavy);
-    font-family: 'UtsukushiFONT';
-    margin: 4vh 0;
+section {
+  padding: 8vh 0 8vh;
 }
 
-.my_introduction{
-    font-size: var(--fontS);
-    color: var(--mainnavy);
-    font-family: 'UtsukushiFONT';
-    margin-bottom: 4vh;
+.aboutMe {
+  width: 100vw;
+  text-align: center;
 }
 
-.works{
-    width: 100%;
-    background-color: var(--mainnavy);
+.aboutMe .my_image {
+  width: 15vw;
+  height: 15vw;
+  background-color: #fbeee8;
+  border-radius: 50%;
+  margin: 4vh auto 0;
+}
+
+.aboutMe .my_name {
+  font-size: 35px;
+  color: #022c48;
+  font-family: 'UtsukushiFONT';
+  margin: 4vh 0;
+}
+
+.aboutMe .my_introduction {
+  font-size: 15px;
+  line-height: 145%;
+  color: #022c48;
+  font-family: 'UtsukushiFONT';
+  margin-bottom: 4vh;
+}
+
+.section_title {
+  font-family: 'Noteworthy-Light';
+  font-size: 25px;
+  text-align: center;
+}
+
+.works {
+  width: 100vw;
+  background-color: #022c48;
+  padding-bottom: 4vh;
+}
+
+.works .section_title {
+  color: white;
+  padding-bottom: 4vh;
+}
+
+.works .work_list {
+  width: 80vw;
+  margin: 0 auto 0;
+}
+
+.works .work_list .works_03 {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 4vh;
+}
+
+.works .work_list .works_03 p {
+  width: calc(55vw / 3);
+}
+
+.works .work_list .works_03 p img {
+  width: 100%;
+}
+
+.skill {
+  width: 100vw;
+  background-color: #fbeee8;
+  color: #022c48;
+}
+
+.skill .section_title {
+  padding-bottom: 4vh;
+}
+
+.skill .skill_part {
+  width: 90vw;
+  margin: 0 auto 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.skill .skill_part .skill_box {
+  text-align: center;
+}
+
+.skill .skill_part .skill_box .skill_img {
+  width: 35%;
+  margin: 2vh auto 4vh;
+}
+
+.skill .skill_part .skill_box .skill_img img {
+  width: 100%;
+}
+
+.skill .skill_part .skill_box .skill_comment {
+  font-size: 15px;
+  font-family: 'UtsukushiFONT';
+  margin-bottom: 2vh;
+}
+
+.skill .skill_part .skill_box .each_skill {
+  font-size: 25px;
+  font-family: 'Noteworthy-Light';
+  margin-bottom: 2vh;
 }

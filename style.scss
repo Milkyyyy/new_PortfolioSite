@@ -1,0 +1,206 @@
+$navy: #022c48;
+$lightorange: #ffd3bf;
+$lightpink: #fbeee8;
+
+$fontL: 35px;
+$fontM: 25px;
+$fontS: 15px;
+
+$fontTitle: 80px;
+
+/* font */
+@font-face {
+    font-family: 'Noteworthy-Bold';
+    src:url('./fonts/Noteworthy-Bold-02.ttf');
+}
+@font-face {
+    font-family: 'Noteworthy-Light';
+    src:url('./fonts/Noteworthy-Light-01.ttf');
+}
+@font-face {
+    font-family: 'UtsukushiFONT';
+    src:url('./fonts/UtsukushiFONT.otf');
+}
+
+header{
+    position: fixed;
+    top: 3%;
+    right: 3%;
+    background-color: $lightpink;
+    border: 1px $navy solid;
+    border-radius: 25px;
+    padding: 0.5vw 2vw;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.3);
+    z-index: 5;
+    a{
+        display: inline;
+        font-family: 'Noteworthy-Light';
+        font-size: $fontS;
+        color: $navy;
+        text-decoration: none;
+        padding: 0 1vw;
+    }
+}
+
+.top{
+    width: 100vw;
+    height: 85vh;
+    position: relative;
+    .title{
+        position: absolute;
+        top: 40vh;
+        left: 10vw;
+        color: $navy;
+        z-index: 2;
+        text-align: center;
+        .main_title{
+            font-family: 'Noteworthy-Bold';
+            font-size: $fontTitle;
+        }
+        
+        .sub_title{
+            font-family: 'Noteworthy-Light';
+            font-size: $fontL;
+        }
+    }
+    .top_image{
+        width: 60%;
+        height: 80%;
+        position: absolute;
+        top: 15vh;
+        right: 8vw;
+        height: 80%;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;   
+        }
+    }
+}
+
+nav{
+    width: 100vw;
+    height: calc($fontM * 2);
+    margin-top: 2vh;
+    ul{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        li{
+            width: calc(100vw/4);
+            height: 100%;
+            background-color: $lightorange;
+            border: 1px white solid;
+            color: $navy;
+            font-size: $fontM;
+            font-family: 'Noteworthy-Light';
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            a{
+                text-decoration: none;
+                color: $navy;
+            }
+        }
+    }
+}
+
+section{
+    padding: 8vh 0 8vh;
+}
+
+.aboutMe{
+    width: 100vw;
+    text-align: center;
+    .my_image{
+        width: 15vw;
+        height: 15vw;
+        background-color: $lightpink;
+        border-radius: 50%;
+        margin: 4vh auto 0;
+    }
+    .my_name{
+        font-size: $fontL;
+        color: $navy;
+        font-family: 'UtsukushiFONT';
+        margin: 4vh 0;
+    }
+    
+    .my_introduction{
+        font-size: $fontS;
+        line-height: 145%;
+        color: $navy;
+        font-family: 'UtsukushiFONT';
+        margin-bottom: 4vh;
+    }
+}
+
+.section_title{
+    font-family: 'Noteworthy-Light';
+    font-size: $fontM;
+    text-align: center;
+}
+
+.works{
+    width: 100vw;
+    background-color: $navy;
+    padding-bottom: 4vh;
+    .section_title{
+        color: white;
+        padding-bottom: 4vh;
+    }
+    .work_list{
+        width: 80vw;
+        margin: 0 auto 0;
+        .works_03{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-bottom: 4vh;
+            p{
+                width: calc(55vw / 3);
+                img{
+                    width: 100%;
+                }
+            }
+        } 
+    }
+}
+
+.skill{
+    width: 100vw;
+    background-color: $lightpink;
+    color: $navy;
+    .section_title{
+        padding-bottom: 4vh;
+    }
+    .skill_part{
+        width: 90vw;
+        margin: 0 auto 0;
+        display: flex;
+        justify-content: space-around;
+        .skill_box{
+            text-align: center;
+            .skill_img{
+                width: 35%;
+                margin: 2vh auto 4vh;
+                img{
+                    width: 100%;
+                }
+            }
+            .skill_comment{
+                font-size: $fontS;
+                font-family: 'UtsukushiFONT';
+                margin-bottom: 2vh;
+            }
+            .each_skill{
+                font-size: $fontM;
+                font-family: 'Noteworthy-Light';
+                margin-bottom: 2vh;
+            }
+        }
+    }
+    
+}

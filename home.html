@@ -5,17 +5,17 @@
 	<title>イマイリナのportfolio</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover">
-	<link rel="stylesheet" href="./style.sass" type="text/css" />
+	<link rel="stylesheet" href="./style.min.css" type="text/css" />
 	<link rel="stylesheet" href="./ress.min.css" type="text/css" />
 	<script type="text/javascript" src="./jquery-3.4.1.min.js"></script>
 </head>
 
 <body>
 <header>
-	<a href="#aboutMe">About Me</a>
-	<a href="#works">Works</a>
-	<a href="#skill">Skill</a>
-	<a href="#activities">Activities</a>
+	<a href="#aboutMe" class="link_aboutMe">About Me</a>
+	<a href="#works" class="link_works">Works</a>
+	<a href="#skill" class="link_skill">Skill</a>
+	<a href="#activities" class="link_activities">Activities</a>
 </header>
 <div class="top">
 	<div class="title">
@@ -26,14 +26,16 @@
 </div>
 <nav>
 	<ul>
-		<li>About Me</li>
-		<li>Works</li>
-		<li>Skill</li>
-		<li>Activities</li>
+		<li><a href="#aboutMe" class="link_aboutMe">About Me</a></li>
+		<li><a href="#works" class="link_works">Works</a></li>
+		<li><a href="#skill" class="link_skill">Skill</a></li>
+		<li><a href="#activities" class="link_activities">Activities</a></li>
 	</ul>
 </nav>
 <section class="aboutMe" id="aboutMe">
-	<!-- <p class="my_image"><img src="./images/top/my_image.png" alt="写真"></p> -->
+	<p class="my_image">
+		<!-- <img src="./images/top/my_image.png" alt="写真"> -->
+	</p>
 	<div class="my_name">いまい りな</div>
 	<div class="my_introduction">
 		1998年 名古屋生まれ、名古屋市立大学芸術工学部情報環境デザイン学科3年生<br>
@@ -41,11 +43,102 @@
 		学習塾でポスターを作るアルバイトをしています<br>
 	</div>
 </section>
-<section class="works">
-
+<section class="works" id="works">
+		<p class="section_title">
+			Works
+		</p>
+		<div class="work_list">
+			<div class="works_03">
+					<p class="work_photo">
+							<a href="./work01.html">
+								<img src="./images/top/work01_img.png" alt="">
+							</a>
+						</p>
+						<p class="work_photo">
+							<a href="./work01.html">
+								<img src="./images/top/work01_img.png" alt="">
+							</a>
+						</p>
+						<p class="work_photo">
+							<a href="./work01.html">
+								<img src="./images/top/work01_img.png" alt="">
+							</a>
+						</p>
+			</div>
+			<div class="works_03">
+					<p class="work_photo">
+							<a href="./work01.html">
+								<img src="./images/top/work01_img.png" alt="">
+							</a>
+						</p>
+						<p class="work_photo">
+							<a href="./work01.html">
+								<img src="./images/top/work01_img.png" alt="">
+							</a>
+						</p>
+						<p class="work_photo">
+							<a href="./work01.html">
+								<img src="./images/top/work01_img.png" alt="">
+							</a>
+						</p>
+			</div>
+		</div>
+</section>
+<section class="skill" id="skill">
+	<p class="section_title">
+		Skill
+	</p>
+	<div class="skill_part">
+		<div class="skill_box">
+			<p class="skill_img">
+				<img src="./images/top/good_img.png" alt="">
+			</p>
+			<p class="skill_comment">
+				主に取り組んでいます
+			</p>
+			<div class="each_skill">
+				HTML/CSS<br>
+				JavaScript<br>
+				jQuery<br>
+				Illustrator
+			</div>
+		</div>
+		<div class="skill_box">
+			<p class="skill_img">
+				<img src="./images/top/search_img.png" alt="">
+			</p>
+			<p class="skill_comment">
+				調べながら取り組みます
+			</p>
+			<div class="each_skill">
+				Unity(c#)<br>
+				Java<br>
+				Processing<br>
+				Photoshop
+			</div>
+		</div>
+		<div class="skill_box">
+			<p class="skill_img">
+				<img src="./images/top/hard_img.png" alt="">
+			</p>
+			<p class="skill_comment">
+				勉強をはじめました
+			</p>
+			<div class="each_skill">
+				React.js<br>
+				Ruby on Rails<br>
+				python
+			</div>
+		</div>
+	</div>
+</section>
+<section class="activities" id="activities">
+		<p class="section_title">
+			Activities
+		</p>
 </section>
 
 </body>
 
-<script type="text/javascript" src="./home.js"></script>
+<script type="text/javascript" src="./script.js"></script>
 </html>
