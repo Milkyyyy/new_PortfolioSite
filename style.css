@@ -14,6 +14,10 @@
   src: url("./fonts/UtsukushiFONT.otf");
 }
 
+.hidden {
+  visibility: hidden;
+}
+
 header {
   position: fixed;
   top: 3%;
@@ -77,7 +81,7 @@ header a {
 
 nav {
   width: 100vw;
-  height: calc($fontM * 2);
+  height: 50px;
   margin-top: 2vh;
 }
 
@@ -89,7 +93,7 @@ nav ul {
 }
 
 nav ul li {
-  width: calc(100vw/4);
+  width: 25vw;
   height: 100%;
   background-color: #ffd3bf;
   border: 1px white solid;
@@ -168,12 +172,20 @@ section {
   margin-bottom: 4vh;
 }
 
-.works .work_list .works_03 p {
-  width: calc(55vw / 3);
+.works .work_list .works_03 .work_photo {
+  width: 18.33333vw;
+  transition: all 0.3s ease;
+  background: #ffd3bf;
 }
 
-.works .work_list .works_03 p img {
+.works .work_list .works_03 .work_photo img {
+  opacity: 1;
   width: 100%;
+  height: 100%;
+}
+
+.works .work_list .works_03 .work_photo img:hover {
+  opacity: 0.7;
 }
 
 .skill {
@@ -216,4 +228,59 @@ section {
   font-size: 25px;
   font-family: 'Noteworthy-Light';
   margin-bottom: 2vh;
+}
+
+.activities {
+  width: 100vw;
+  color: #022c48;
+}
+
+.activities .section_title {
+  padding-bottom: 1vh;
+}
+
+.activities .section_subTitle {
+  padding-bottom: 4vh;
+  text-align: center;
+  font-size: 15px;
+  font-family: 'UtsukushiFONT';
+}
+
+.activities .activities_part {
+  width: 90vw;
+  margin: 0 auto 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.activities .activities_part .activity_box {
+  text-align: center;
+  width: 15vw;
+  height: 15vw;
+}
+
+.activities .activities_part .activity_box .activity_img {
+  display: inline-block;
+  width: 10vw;
+  height: 10vw;
+  margin: 4vh auto 4vh;
+}
+
+.activities .activities_part .activity_box .activity_img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.activities .activities_part .activity_box .activity_comment {
+  font-size: 15px;
+  font-family: 'UtsukushiFONT';
+}
+
+footer {
+  width: 100vw;
+  height: 5vh;
+  background-color: #022c48;
+  margin-top: 4vh;
 }

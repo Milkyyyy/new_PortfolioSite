@@ -1,0 +1,208 @@
+$navy: #022c48;
+$lightorange: #ffd3bf;
+$lightpink: #fbeee8;
+
+$fontL: 35px;
+$fontM: 25px;
+$fontS: 15px;
+$fontXS: 12px;
+
+$fontTitle: 80px;
+
+/* font */
+@font-face {
+    font-family: 'Noteworthy-Bold';
+    src:url('./fonts/Noteworthy-Bold-02.ttf');
+}
+@font-face {
+    font-family: 'Noteworthy-Light';
+    src:url('./fonts/Noteworthy-Light-01.ttf');
+}
+@font-face {
+    font-family: 'UtsukushiFONT';
+    src:url('./fonts/UtsukushiFONT.otf');
+}
+
+header{
+    position: fixed;
+    top: 3%;
+    right: 3%;
+    background-color: $lightpink;
+    border: 1px $navy solid;
+    border-radius: 25px;
+    padding: 0.5vw 2vw;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.3);
+    z-index: 5;
+    a{
+        display: inline;
+        font-family: 'Noteworthy-Light';
+        font-size: $fontS;
+        color: $navy;
+        text-decoration: none;
+        padding: 0 1vw;
+    }
+    .link_works{
+      color: $lightorange;
+    }
+}
+.fixed_title{
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: $navy;
+  z-index: 2;
+  text-align: center;
+  background-color: white;
+  padding: 5vh;
+  a{
+    color: $navy;
+    text-decoration: none;
+  }
+  .main_title{
+      font-family: 'Noteworthy-Bold';
+      font-size: $fontM;
+  }
+  
+  .sub_title{
+      font-family: 'Noteworthy-Light';
+      font-size: $fontS;
+  }
+}
+
+.top{
+  width: 100vw;
+  height: 20vh;;
+  position: relative;
+  .top_image{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 62vw;
+    height: 20vh;
+    z-index: 1;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 0 50%;
+      z-index: 2;
+    }
+  }
+  .title{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    font-family: 'Noteworthy-Bold';
+    font-size: $fontTitle;
+    color: $navy;
+    z-index: 3; 
+  }
+}
+
+.description{
+  // background-color: $lightorange;
+  width: 37vw;
+  height: 60vh;
+  font-size: $fontXS;
+  font-family: 'UtsukushiFONT';
+  color: $navy;
+  padding: 21vh 0vh 6vh 6vh;
+  position: relative;
+  float:  left; 
+  text-align: center;
+  .app_context{
+    margin: 0 auto 0;
+    text-align: center;
+    padding-bottom: 3vh;
+  }
+  .app_title{
+    font-size: $fontM;
+    text-align: center;
+    padding-bottom: 3vh;
+  }
+  .app_icon{
+    width: 20%;
+    margin: 0 auto 0;
+    padding-bottom: 3vh;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .app_overview{
+    display: inline-block;
+    margin: 0 auto 0;
+    padding-bottom: 3vh;
+    // position: absolute;
+    // top: 95%;
+    // left: 50%;
+    // transform: translate(-50%,-50%);
+    text-align: left;
+    line-height: $fontXS + 5px;
+
+  }
+}
+
+.app_images{
+  width: 60vw;
+  height: 60vh;
+  // background-color: $lightpink;
+  display: flex;
+  justify-content: space-around;
+  padding: 21vh 6vh 6vh 0vh;
+  p{
+    width: 10vw;
+    height: auto;
+    img{
+      width: 100%;
+      // height: 100%;
+    }
+  }
+}
+
+.app_bg{
+  width: 80vw;
+  font-size: $fontXS;
+  font-family: 'UtsukushiFONT';
+  color: $navy;
+  background-color: $lightpink;
+  padding: 6vh;
+  margin: 6vh auto 6vh;
+  p{
+    margin-bottom: 1em;
+    line-height: $fontXS + 5px;
+  }
+}
+
+.arrow{
+  color: $navy;
+  font-size: $fontS;
+  font-family: 'Noteworthy-Light';
+  width: 100vw;
+  padding-top: 6vh;
+  position: relative;
+  .arrowP{
+    position: absolute;
+    top: 0;
+    left: 10vw;
+  }
+  .arrowN{
+    position: absolute;
+    top: 0;
+    right: 10vw;
+  }
+  a{
+    text-decoration: none;
+    color: $navy;
+  }
+}
+
+footer{
+  width: 100vw;
+  height: 5vh;
+  background-color: $navy;
+  margin-top: 4vh;
+}
+
