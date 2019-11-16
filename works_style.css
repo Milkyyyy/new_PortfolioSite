@@ -102,7 +102,6 @@ header .link_works {
 
 .description {
   width: 37vw;
-  height: 60vh;
   font-size: 12px;
   font-family: 'UtsukushiFONT';
   color: #022c48;
@@ -145,7 +144,6 @@ header .link_works {
 
 .app_images {
   width: 60vw;
-  height: 60vh;
   display: flex;
   justify-content: space-around;
   padding: 21vh 6vh 6vh 0vh;
@@ -158,6 +156,96 @@ header .link_works {
 
 .app_images p img {
   width: 100%;
+}
+
+.app_images_mov {
+  width: 60vw;
+  display: flex;
+  justify-content: space-around;
+  padding: 21vh 6vh 6vh 0vh;
+}
+
+.app_images_mov p {
+  width: 10vw;
+  height: auto;
+}
+
+.app_images_mov p img {
+  width: 100%;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.6);
+}
+
+.app_images_mov .mov {
+  width: 30vw;
+}
+
+.app_images_mov .mov video {
+  width: 100%;
+}
+
+.app_images_bImg01 {
+  width: 60vw;
+  display: flex;
+  justify-content: space-around;
+  padding: 21vh 6vh 6vh 0vh;
+}
+
+.app_images_bImg01 p {
+  width: 10vw;
+  height: auto;
+}
+
+.app_images_bImg01 p img {
+  width: 100%;
+}
+
+.app_images_bImg01 .bImg {
+  width: 20vw;
+  margin: auto;
+}
+
+.app_images_bImg01 .bImg img {
+  width: 100%;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.6);
+}
+
+.app_images_onlyB {
+  width: 60vw;
+  display: flex;
+  justify-content: space-around;
+  padding: 21vh 6vh 6vh 0vh;
+}
+
+.app_images_onlyB p {
+  width: 18vw;
+  height: auto;
+}
+
+.app_images_onlyB p img {
+  width: 100%;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.6);
+}
+
+.app_images_onlyB_mov {
+  width: 60vw;
+  display: flex;
+  justify-content: space-around;
+  padding: 21vh 6vh 6vh 0vh;
+}
+
+.app_images_onlyB_mov p {
+  width: 20vw;
+  height: auto;
+}
+
+.app_images_onlyB_mov p img {
+  width: 90%;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.6);
+}
+
+.app_images_onlyB_mov p video {
+  width: 100%;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.6);
 }
 
 .app_bg {
@@ -173,6 +261,14 @@ header .link_works {
 .app_bg p {
   margin-bottom: 1em;
   line-height: 17px;
+}
+
+.app_bg a {
+  color: #022c48;
+}
+
+.margin-top0 {
+  margin-top: 0;
 }
 
 .arrow {
