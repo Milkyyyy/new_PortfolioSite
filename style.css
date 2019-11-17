@@ -128,6 +128,12 @@ section {
   margin: 4vh auto 0;
 }
 
+.aboutMe .my_image img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
 .aboutMe .my_name {
   font-size: 35px;
   color: #022c48;
@@ -250,13 +256,15 @@ section {
   width: 90vw;
   margin: 0 auto 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  position: relative;
 }
 
 .activities .activities_part .activity_box {
   text-align: center;
   width: 15vw;
   height: 15vw;
+  z-index: 1;
 }
 
 .activities .activities_part .activity_box .activity_img {
@@ -276,6 +284,74 @@ section {
 .activities .activities_part .activity_box .activity_comment {
   font-size: 15px;
   font-family: 'UtsukushiFONT';
+}
+
+.activities .activities_part .activity_content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  background-color: #ffd3bf;
+  color: #022c48;
+  font-size: 12px;
+  line-height: 17px;
+  font-family: 'UtsukushiFONT';
+  padding: 3vh;
+  transition: all .3s;
+}
+
+.activities .activities_part .con_sydney {
+  left: 20%;
+  width: 60%;
+  opacity: 0;
+  z-index: 0;
+}
+
+.activities .activities_part .con_intern {
+  left: 40%;
+  width: 60%;
+  opacity: 0;
+  z-index: 0;
+}
+
+.activities .activities_part .con_workshop {
+  left: 60%;
+  width: 40%;
+  opacity: 0;
+  z-index: 0;
+}
+
+.activities .activities_part .con_othlohack {
+  left: 0;
+  width: 60%;
+  opacity: 0;
+  z-index: 0;
+}
+
+.activities .activities_part .con_poster {
+  left: 10%;
+  width: 60%;
+  opacity: 0;
+  z-index: 0;
+}
+
+.activities .activities_part .con_poster .con_img {
+  width: 50%;
+  margin: 1vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.activities .activities_part .con_poster .con_img .DM_img {
+  width: 100%;
+  padding: 1vh;
+  display: inline-block;
+}
+
+.activities .activities_part .con_poster .con_img .pos_img {
+  width: 50%;
+  padding: 1vh;
+  display: inline-block;
 }
 
 footer {

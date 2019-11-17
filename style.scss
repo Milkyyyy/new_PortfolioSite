@@ -5,6 +5,7 @@ $lightpink: #fbeee8;
 $fontL: 35px;
 $fontM: 25px;
 $fontS: 15px;
+$fontXS: 12px;
 
 $fontTitle: 80px;
 
@@ -124,6 +125,11 @@ section{
         background-color: $lightpink;
         border-radius: 50%;
         margin: 4vh auto 0;
+        img{
+            width: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
     }
     .my_name{
         font-size: $fontL;
@@ -231,11 +237,13 @@ section{
         width: 90vw;
         margin: 0 auto 0;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
+        position: relative;
         .activity_box{
             text-align: center;
             width: 15vw;
             height: 15vw;
+            z-index: 1;
             .activity_img{
                 display: inline-block;
                 width: 10vw;
@@ -252,6 +260,67 @@ section{
             .activity_comment{
                 font-size: $fontS;
                 font-family: 'UtsukushiFONT';
+            }
+        }
+        .activity_content{
+            position: absolute;
+            // width: 60vw;
+            top: 50%;
+            transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            background-color: $lightorange;
+            color: $navy;
+            font-size: $fontXS;
+            line-height: $fontXS + 5px;
+            font-family: 'UtsukushiFONT';
+            padding: 3vh;
+            transition: all .3s;
+        }
+        .con_sydney{
+            left: 20%;
+            width: 60%;
+            opacity: 0;
+            z-index: 0;
+        }
+        .con_intern{
+            left: 40%;
+            width: 60%;
+            opacity: 0;
+            z-index: 0;
+        }
+        .con_workshop{
+            left: 60%;
+            width: 40%;
+            opacity: 0;
+            z-index: 0;
+        }
+        .con_othlohack{
+            left: 0;
+            width: 60%;
+            opacity: 0;
+            z-index: 0;
+        }
+        .con_poster{
+            left: 10%;
+            width: 60%;
+            opacity: 0;
+            z-index: 0;
+            .con_img{
+                width: 50%;
+                // height: 30%;
+                margin: 1vh;
+                display: flex;
+                justify-content: space-between;
+                .DM_img{
+                    width: 100%;
+                    padding: 1vh;
+                    display: inline-block;
+                }
+                .pos_img{
+                    width: 50%;
+                    padding: 1vh;
+                    display: inline-block;
+                }
             }
         }
     }
