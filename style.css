@@ -419,6 +419,7 @@ section {
   margin: 1vh;
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 }
 
 .activities .activities_part .con_poster .con_img .DM_img {
