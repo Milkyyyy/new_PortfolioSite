@@ -35,6 +35,12 @@ header a {
   padding: 0 1vw;
 }
 
+@media screen and (max-width: 736px) {
+  header a {
+    font-size: 8px;
+  }
+}
+
 header .link_works {
   color: #ffd3bf;
 }
@@ -60,9 +66,21 @@ header .link_works {
   font-size: 25px;
 }
 
+@media screen and (max-width: 736px) {
+  .fixed_title .main_title {
+    font-size: 15px;
+  }
+}
+
 .fixed_title .sub_title {
   font-family: 'Noteworthy-Light';
   font-size: 15px;
+}
+
+@media screen and (max-width: 736px) {
+  .fixed_title .sub_title {
+    font-size: 8px;
+  }
 }
 
 .top {
@@ -100,6 +118,12 @@ header .link_works {
   z-index: 3;
 }
 
+@media screen and (max-width: 736px) {
+  .top .title {
+    font-size: 50px;
+  }
+}
+
 .description {
   width: 37vw;
   font-size: 12px;
@@ -109,6 +133,12 @@ header .link_works {
   position: relative;
   float: left;
   text-align: center;
+}
+
+@media screen and (max-width: 736px) {
+  .description {
+    font-size: 6px;
+  }
 }
 
 .description .app_context {
@@ -121,6 +151,12 @@ header .link_works {
   font-size: 25px;
   text-align: center;
   padding-bottom: 3vh;
+}
+
+@media screen and (max-width: 736px) {
+  .description .app_title {
+    font-size: 6px;
+  }
 }
 
 .description .app_icon {
@@ -140,6 +176,12 @@ header .link_works {
   padding-bottom: 3vh;
   text-align: left;
   line-height: 17px;
+}
+
+@media screen and (max-width: 736px) {
+  .description .app_overview {
+    line-height: 11px;
+  }
 }
 
 .app_images {
@@ -258,9 +300,21 @@ header .link_works {
   margin: 6vh auto 6vh;
 }
 
+@media screen and (max-width: 736px) {
+  .app_bg {
+    font-size: 6px;
+  }
+}
+
 .app_bg p {
   margin-bottom: 1em;
   line-height: 17px;
+}
+
+@media screen and (max-width: 736px) {
+  .app_bg p {
+    line-height: 11px;
+  }
 }
 
 .app_bg a {
@@ -278,6 +332,12 @@ header .link_works {
   width: 100vw;
   padding-top: 6vh;
   position: relative;
+}
+
+@media screen and (max-width: 736px) {
+  .arrow {
+    font-size: 8px;
+  }
 }
 
 .arrow .arrowP {

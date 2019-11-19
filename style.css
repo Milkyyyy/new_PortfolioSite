@@ -39,6 +39,12 @@ header a {
   padding: 0 1vw;
 }
 
+@media screen and (max-width: 736px) {
+  header a {
+    font-size: 8px;
+  }
+}
+
 .top {
   width: 100vw;
   height: 85vh;
@@ -59,9 +65,21 @@ header a {
   font-size: 80px;
 }
 
+@media screen and (max-width: 736px) {
+  .top .title .main_title {
+    font-size: 50px;
+  }
+}
+
 .top .title .sub_title {
   font-family: 'Noteworthy-Light';
   font-size: 35px;
+}
+
+@media screen and (max-width: 736px) {
+  .top .title .sub_title {
+    font-size: 20px;
+  }
 }
 
 .top .top_image {
@@ -85,6 +103,12 @@ nav {
   margin-top: 2vh;
 }
 
+@media screen and (max-width: 736px) {
+  nav {
+    height: 30px;
+  }
+}
+
 nav ul {
   width: 100%;
   height: 100%;
@@ -104,6 +128,12 @@ nav ul li {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (max-width: 736px) {
+  nav ul li {
+    font-size: 15px;
+  }
 }
 
 nav ul li a {
@@ -141,6 +171,12 @@ section {
   margin: 4vh 0;
 }
 
+@media screen and (max-width: 736px) {
+  .aboutMe .my_name {
+    font-size: 20px;
+  }
+}
+
 .aboutMe .my_introduction {
   font-size: 15px;
   line-height: 145%;
@@ -149,10 +185,22 @@ section {
   margin-bottom: 4vh;
 }
 
+@media screen and (max-width: 736px) {
+  .aboutMe .my_introduction {
+    font-size: 8px;
+  }
+}
+
 .section_title {
   font-family: 'Noteworthy-Light';
   font-size: 25px;
   text-align: center;
+}
+
+@media screen and (max-width: 736px) {
+  .section_title {
+    font-size: 15px;
+  }
 }
 
 .works {
@@ -230,10 +278,22 @@ section {
   margin-bottom: 2vh;
 }
 
+@media screen and (max-width: 736px) {
+  .skill .skill_part .skill_box .skill_comment {
+    font-size: 8px;
+  }
+}
+
 .skill .skill_part .skill_box .each_skill {
   font-size: 25px;
   font-family: 'Noteworthy-Light';
   margin-bottom: 2vh;
+}
+
+@media screen and (max-width: 736px) {
+  .skill .skill_part .skill_box .each_skill {
+    font-size: 15px;
+  }
 }
 
 .activities {
@@ -250,6 +310,12 @@ section {
   text-align: center;
   font-size: 15px;
   font-family: 'UtsukushiFONT';
+}
+
+@media screen and (max-width: 736px) {
+  .activities .section_subTitle {
+    font-size: 8px;
+  }
 }
 
 .activities .activities_part {
@@ -286,6 +352,12 @@ section {
   font-family: 'UtsukushiFONT';
 }
 
+@media screen and (max-width: 736px) {
+  .activities .activities_part .activity_box .activity_comment {
+    font-size: 8px;
+  }
+}
+
 .activities .activities_part .activity_content {
   position: absolute;
   top: 50%;
@@ -298,6 +370,13 @@ section {
   font-family: 'UtsukushiFONT';
   padding: 3vh;
   transition: all .3s;
+}
+
+@media screen and (max-width: 736px) {
+  .activities .activities_part .activity_content {
+    font-size: 6px;
+    line-height: 11px;
+  }
 }
 
 .activities .activities_part .con_sydney {

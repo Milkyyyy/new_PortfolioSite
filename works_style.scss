@@ -2,12 +2,39 @@ $navy: #022c48;
 $lightorange: #ffd3bf;
 $lightpink: #fbeee8;
 
-$fontL: 35px;
-$fontM: 25px;
-$fontS: 15px;
-$fontXS: 12px;
+$fontL_pc: 35px;
+$fontM_pc: 25px;
+$fontS_pc: 15px;
+$fontXS_pc: 12px;
+$fontTitle_pc: 80px;
 
-$fontTitle: 80px;
+$fontL_sp: 20px;
+$fontM_sp: 15px;
+$fontS_sp: 8px;
+$fontXS_sp: 6px;
+$fontTitle_sp: 50px;
+
+
+$breakpoint-pc: 980px;
+$breakpoint-sp: 736px; //スマホ横向き
+
+@mixin max-screen($break-point) {
+    @media screen and (max-width: $break-point) {
+        @content;
+    }
+}
+
+@mixin min-screen($break-point) {
+    @media screen and (min-width: $break-point) {
+        @content;
+    }
+}
+
+@mixin screen($break-point-min,$break-point-max) {
+    @media screen and (min-width: $break-point-min) and (max-width: $break-point-max) {
+        @content;
+    }
+}
 
 /* font */
 @font-face {
@@ -36,7 +63,10 @@ header{
     a{
         display: inline;
         font-family: 'Noteworthy-Light';
-        font-size: $fontS;
+        font-size: $fontS_pc;
+        @include max-screen($breakpoint_sp) {
+          font-size: $fontS_sp;
+      }
         color: $navy;
         text-decoration: none;
         padding: 0 1vw;
@@ -60,12 +90,18 @@ header{
   }
   .main_title{
       font-family: 'Noteworthy-Bold';
-      font-size: $fontM;
+      font-size: $fontM_pc;
+      @include max-screen($breakpoint_sp) {
+        font-size: $fontM_sp;
+    }
   }
   
   .sub_title{
       font-family: 'Noteworthy-Light';
-      font-size: $fontS;
+      font-size: $fontS_pc;
+      @include max-screen($breakpoint_sp) {
+        font-size: $fontS_sp;
+    }
   }
 }
 
@@ -95,7 +131,10 @@ header{
     transform: translate(-50%,-50%);
     -webkit-transform: translate(-50%,-50%);
     font-family: 'Noteworthy-Bold';
-    font-size: $fontTitle;
+    font-size: $fontTitle_pc;
+    @include max-screen($breakpoint_sp) {
+      font-size: $fontTitle_sp;
+  }
     color: $navy;
     z-index: 3; 
   }
@@ -105,7 +144,10 @@ header{
   // background-color: $lightorange;
   width: 37vw;
   // height: 60vh;
-  font-size: $fontXS;
+  font-size: $fontXS_pc;
+  @include max-screen($breakpoint_sp) {
+    font-size: $fontXS_sp;
+  }
   font-family: 'UtsukushiFONT';
   color: $navy;
   padding: 21vh 0vh 6vh 6vh;
@@ -118,7 +160,10 @@ header{
     padding-bottom: 3vh;
   }
   .app_title{
-    font-size: $fontM;
+    font-size: $fontM_pc;
+    @include max-screen($breakpoint_sp) {
+      font-size: $fontXS_sp;
+    }
     text-align: center;
     padding-bottom: 3vh;
   }
@@ -140,8 +185,10 @@ header{
     // left: 50%;
     // transform: translate(-50%,-50%);
     text-align: left;
-    line-height: $fontXS + 5px;
-
+    line-height: $fontXS_pc + 5px;
+    @include max-screen($breakpoint_sp) {
+      line-height: $fontXS_sp + 5px;
+    }
   }
 }
 
@@ -250,7 +297,10 @@ header{
 
 .app_bg{
   width: 80vw;
-  font-size: $fontXS;
+  font-size: $fontXS_pc;
+  @include max-screen($breakpoint_sp) {
+    font-size: $fontXS_sp;
+  }
   font-family: 'UtsukushiFONT';
   color: $navy;
   background-color: $lightpink;
@@ -258,7 +308,10 @@ header{
   margin: 6vh auto 6vh;
   p{
     margin-bottom: 1em;
-    line-height: $fontXS + 5px;
+    line-height: $fontXS_pc + 5px;
+    @include max-screen($breakpoint_sp) {
+      line-height: $fontXS_sp + 5px;
+  }
   }
   a{
     color: $navy;
@@ -271,7 +324,10 @@ header{
 
 .arrow{
   color: $navy;
-  font-size: $fontS;
+  font-size: $fontS_pc;
+  @include max-screen($breakpoint_sp) {
+    font-size: $fontS_sp;
+  }
   font-family: 'Noteworthy-Light';
   width: 100vw;
   padding-top: 6vh;
