@@ -423,12 +423,14 @@ section {
 
 .activities .activities_part .con_poster .con_img .DM_img {
   width: 100%;
+  height: auto;
   padding: 1vh;
   display: inline-block;
 }
 
 .activities .activities_part .con_poster .con_img .pos_img {
   width: 50%;
+  height: auto;
   padding: 1vh;
   display: inline-block;
 }
