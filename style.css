@@ -41,7 +41,7 @@ header a {
 
 @media screen and (max-width: 736px) {
   header a {
-    font-size: 8px;
+    font-size: 10px;
   }
 }
 
@@ -187,7 +187,7 @@ section {
 
 @media screen and (max-width: 736px) {
   .aboutMe .my_introduction {
-    font-size: 8px;
+    font-size: 10px;
   }
 }
 
@@ -280,7 +280,7 @@ section {
 
 @media screen and (max-width: 736px) {
   .skill .skill_part .skill_box .skill_comment {
-    font-size: 8px;
+    font-size: 10px;
   }
 }
 
@@ -314,7 +314,7 @@ section {
 
 @media screen and (max-width: 736px) {
   .activities .section_subTitle {
-    font-size: 8px;
+    font-size: 10px;
   }
 }
 
@@ -354,7 +354,7 @@ section {
 
 @media screen and (max-width: 736px) {
   .activities .activities_part .activity_box .activity_comment {
-    font-size: 8px;
+    font-size: 10px;
   }
 }
 
@@ -374,8 +374,8 @@ section {
 
 @media screen and (max-width: 736px) {
   .activities .activities_part .activity_content {
-    font-size: 6px;
-    line-height: 11px;
+    font-size: 8px;
+    line-height: 13px;
   }
 }
 

@@ -37,7 +37,7 @@ header a {
 
 @media screen and (max-width: 736px) {
   header a {
-    font-size: 8px;
+    font-size: 10px;
   }
 }
 
@@ -79,7 +79,7 @@ header .link_works {
 
 @media screen and (max-width: 736px) {
   .fixed_title .sub_title {
-    font-size: 8px;
+    font-size: 10px;
   }
 }
 
@@ -137,7 +137,7 @@ header .link_works {
 
 @media screen and (max-width: 736px) {
   .description {
-    font-size: 6px;
+    font-size: 8px;
   }
 }
 
@@ -155,7 +155,7 @@ header .link_works {
 
 @media screen and (max-width: 736px) {
   .description .app_title {
-    font-size: 6px;
+    font-size: 8px;
   }
 }
 
@@ -180,7 +180,7 @@ header .link_works {
 
 @media screen and (max-width: 736px) {
   .description .app_overview {
-    line-height: 11px;
+    line-height: 13px;
   }
 }
 
@@ -302,7 +302,7 @@ header .link_works {
 
 @media screen and (max-width: 736px) {
   .app_bg {
-    font-size: 6px;
+    font-size: 8px;
   }
 }
 
@@ -313,7 +313,7 @@ header .link_works {
 
 @media screen and (max-width: 736px) {
   .app_bg p {
-    line-height: 11px;
+    line-height: 13px;
   }
 }
 
@@ -336,7 +336,7 @@ header .link_works {
 
 @media screen and (max-width: 736px) {
   .arrow {
-    font-size: 8px;
+    font-size: 10px;
   }
 }
 
