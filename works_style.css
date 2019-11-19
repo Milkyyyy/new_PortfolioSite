@@ -186,6 +186,7 @@ header .link_works {
 
 .app_images {
   width: 60vw;
+  background-color: #fbeee8;
   display: flex;
   justify-content: space-around;
   padding: 21vh 6vh 6vh 0vh;
