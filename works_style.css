@@ -198,6 +198,7 @@ header .link_works {
 
 .app_images p img {
   width: 100%;
+  height: auto;
 }
 
 .app_images_mov {
