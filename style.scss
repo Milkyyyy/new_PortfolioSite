@@ -36,6 +36,12 @@ $breakpoint-sp: 736px; //スマホ横向き
     }
 }
 
+@media screen and (orientation: landscape) {
+    .caution { 
+        display: none; 
+    }
+}
+
 /* font */
 @font-face {
     font-family: 'Noteworthy-Bold';
@@ -117,6 +123,17 @@ header{
             object-fit: cover;   
         }
     }
+}
+
+.caution{
+    width: 100vw;
+    height: $fontS_sp * 2;
+    line-height: $fontS_sp * 2;
+    background-color: $navy;
+    color: $lightpink;
+    font-size: $fontS_sp;
+    font-family: 'UtsukushiFONT';
+    text-align: center;
 }
 
 nav{

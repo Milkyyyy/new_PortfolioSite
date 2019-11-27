@@ -36,6 +36,12 @@ $breakpoint-sp: 736px; //スマホ横向き
     }
 }
 
+@media screen and (orientation: landscape) {
+  .caution { 
+      display: none; 
+  }
+}
+
 /* font */
 @font-face {
     font-family: 'Noteworthy-Bold';
@@ -138,6 +144,20 @@ header{
     color: $navy;
     z-index: 3; 
   }
+}
+
+.caution{
+  width: 100vw;
+  height: $fontS_sp * 2;
+  line-height: $fontS_sp * 2;
+  background-color: $navy;
+  color: $lightpink;
+  font-size: $fontS_sp;
+  font-family: 'UtsukushiFONT';
+  text-align: center;
+  position: absolute;
+  top: 10vh;
+  left: 0;
 }
 
 .description{
@@ -316,6 +336,33 @@ header{
   }
   a{
     color: $navy;
+  }
+}
+
+.app_bg01{
+  margin: 6vh auto 3vh;
+}
+
+.qr{
+  width: 25vw;
+  font-family: 'UtsukushiFONT';
+  color: $navy;
+  font-size: $fontXS_pc;
+  @include max-screen($breakpoint_sp) {
+    font-size: $fontXS_sp;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: 65vw;
+  margin-bottom: 3vh;
+  p{
+    width: 30%;
+    margin: 3vh;
+    img{
+      width: 100%;
+      height: 100%;
+    }
   }
 }
 

@@ -1,3 +1,9 @@
+@media screen and (orientation: landscape) {
+  .caution {
+    display: none;
+  }
+}
+
 /* font */
 @font-face {
   font-family: 'Noteworthy-Bold';
@@ -122,6 +128,20 @@ header .link_works {
   .top .title {
     font-size: 50px;
   }
+}
+
+.caution {
+  width: 100vw;
+  height: 20px;
+  line-height: 20px;
+  background-color: #022c48;
+  color: #fbeee8;
+  font-size: 10px;
+  font-family: 'UtsukushiFONT';
+  text-align: center;
+  position: absolute;
+  top: 10vh;
+  left: 0;
 }
 
 .description {
@@ -320,6 +340,38 @@ header .link_works {
 
 .app_bg a {
   color: #022c48;
+}
+
+.app_bg01 {
+  margin: 6vh auto 3vh;
+}
+
+.qr {
+  width: 25vw;
+  font-family: 'UtsukushiFONT';
+  color: #022c48;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: 65vw;
+  margin-bottom: 3vh;
+}
+
+@media screen and (max-width: 736px) {
+  .qr {
+    font-size: 8px;
+  }
+}
+
+.qr p {
+  width: 30%;
+  margin: 3vh;
+}
+
+.qr p img {
+  width: 100%;
+  height: 100%;
 }
 
 .margin-top0 {
