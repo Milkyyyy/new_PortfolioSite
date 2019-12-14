@@ -33,7 +33,7 @@ header {
   border-radius: 25px;
   padding: 0.5vw 2vw;
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
-  z-index: 5;
+  z-index: 20;
 }
 
 header a {
@@ -45,7 +45,7 @@ header a {
   padding: 0 1vw;
 }
 
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 812px) {
   header a {
     font-size: 10px;
   }
@@ -60,20 +60,20 @@ header a {
 .top .title {
   position: absolute;
   top: 40vh;
-  left: 10vw;
+  left: 4vw;
   color: #022c48;
-  z-index: 2;
+  z-index: 12;
   text-align: center;
 }
 
 .top .title .main_title {
   font-family: 'Noteworthy-Bold';
-  font-size: 80px;
+  font-size: 65px;
 }
 
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 812px) {
   .top .title .main_title {
-    font-size: 50px;
+    font-size: 35px;
   }
 }
 
@@ -82,25 +82,71 @@ header a {
   font-size: 35px;
 }
 
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 812px) {
   .top .title .sub_title {
     font-size: 20px;
   }
 }
 
-.top .top_image {
+.top #slideshow {
   width: 60%;
   height: 80%;
   position: absolute;
-  top: 15vh;
+  top: 14vh;
   right: 8vw;
-  height: 80%;
 }
 
-.top .top_image img {
+.top #slideshow p {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 8;
+  opacity: 0.0;
+}
+
+.top #slideshow p img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.top #slideshow p a {
+  width: 15%;
+  height: 30px;
+  color: #022c48;
+  border: solid 0.5px #022c48;
+  font-family: 'UtsukushiFONT';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  position: absolute;
+  bottom: 3%;
+  right: 5%;
+  z-index: 11;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 812px) {
+  .top #slideshow p a {
+    font-size: 8px;
+    height: 16px;
+  }
+}
+
+.top #slideshow p a:hover {
+  background-color: #fbeee8;
+}
+
+.top #slideshow .active {
+  z-index: 10;
+  opacity: 1.0;
+}
+
+.top #slideshow .last-active {
+  z-index: 9;
 }
 
 .caution {
@@ -118,9 +164,10 @@ nav {
   width: 100vw;
   height: 50px;
   margin-top: 2vh;
+  margin-bottom: 6vh;
 }
 
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 812px) {
   nav {
     height: 30px;
   }
@@ -147,7 +194,7 @@ nav ul li {
   align-items: center;
 }
 
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 812px) {
   nav ul li {
     font-size: 15px;
   }
@@ -188,7 +235,7 @@ section {
   margin: 4vh 0;
 }
 
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 812px) {
   .aboutMe .my_name {
     font-size: 20px;
   }
@@ -202,7 +249,7 @@ section {
   margin-bottom: 4vh;
 }
 
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 812px) {
   .aboutMe .my_introduction {
     font-size: 10px;
   }
@@ -210,53 +257,89 @@ section {
 
 .section_title {
   font-family: 'Noteworthy-Light';
-  font-size: 25px;
+  font-size: 35px;
   text-align: center;
 }
 
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 812px) {
   .section_title {
-    font-size: 15px;
+    font-size: 20px;
+  }
+}
+
+.section_subTitle {
+  text-align: center;
+  font-size: 15px;
+  font-family: 'UtsukushiFONT';
+}
+
+@media screen and (max-width: 812px) {
+  .section_subTitle {
+    font-size: 10px;
   }
 }
 
 .works {
   width: 100vw;
-  background-color: #022c48;
-  padding-bottom: 4vh;
+  background-color: white;
+  padding-bottom: 2vh;
 }
 
 .works .section_title {
-  color: white;
-  padding-bottom: 4vh;
+  color: #022c48;
+  padding-bottom: 1vh;
+}
+
+.works .section_subTitle {
+  color: #022c48;
+  padding-bottom: 8vh;
 }
 
 .works .work_list {
-  width: 80vw;
+  width: 60vw;
   margin: 0 auto 0;
 }
 
-.works .work_list .works_03 {
+.works .work_list .works_hr {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin-bottom: 4vh;
+  margin-bottom: 6vh;
 }
 
-.works .work_list .works_03 .work_photo {
-  width: 18.33333vw;
+.works .work_list .works_hr .work_photo {
+  width: 22.5vw;
   transition: all 0.3s ease;
-  background: #ffd3bf;
+  background: #022c48;
+  text-align: center;
+  padding-bottom: 1vh;
 }
 
-.works .work_list .works_03 .work_photo img {
+.works .work_list .works_hr .work_photo img {
   opacity: 1;
   width: 100%;
-  height: 100%;
+  padding: 2vh 2vh 0 2vh;
 }
 
-.works .work_list .works_03 .work_photo img:hover {
+.works .work_list .works_hr .work_photo img:hover {
   opacity: 0.7;
+}
+
+.works .work_list .works_hr .work_photo a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-family: 'UtsukushiFONT';
+}
+
+@media screen and (max-width: 812px) {
+  .works .work_list .works_hr .work_photo a {
+    font-size: 10px;
+  }
+}
+
+.works .work_list .work_03 .work_photo {
+  width: 16.66667vw;
 }
 
 .skill {
@@ -295,7 +378,7 @@ section {
   margin-bottom: 2vh;
 }
 
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 812px) {
   .skill .skill_part .skill_box .skill_comment {
     font-size: 10px;
   }
@@ -307,7 +390,7 @@ section {
   margin-bottom: 2vh;
 }
 
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 812px) {
   .skill .skill_part .skill_box .each_skill {
     font-size: 15px;
   }
@@ -316,6 +399,7 @@ section {
 .activities {
   width: 100vw;
   color: #022c48;
+  margin-bottom: 4vh;
 }
 
 .activities .section_title {
@@ -324,15 +408,6 @@ section {
 
 .activities .section_subTitle {
   padding-bottom: 4vh;
-  text-align: center;
-  font-size: 15px;
-  font-family: 'UtsukushiFONT';
-}
-
-@media screen and (max-width: 736px) {
-  .activities .section_subTitle {
-    font-size: 10px;
-  }
 }
 
 .activities .activities_part {
@@ -369,7 +444,7 @@ section {
   font-family: 'UtsukushiFONT';
 }
 
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 812px) {
   .activities .activities_part .activity_box .activity_comment {
     font-size: 10px;
   }
@@ -382,14 +457,14 @@ section {
   -webkit-transform: translateY(-50%);
   background-color: #ffd3bf;
   color: #022c48;
-  font-size: 12px;
-  line-height: 17px;
+  font-size: 15px;
+  line-height: 20px;
   font-family: 'UtsukushiFONT';
   padding: 3vh;
   transition: all .3s;
 }
 
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 812px) {
   .activities .activities_part .activity_content {
     font-size: 8px;
     line-height: 13px;

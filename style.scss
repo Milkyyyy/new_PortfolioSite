@@ -5,18 +5,18 @@ $lightpink: #fbeee8;
 $fontL_pc: 35px;
 $fontM_pc: 25px;
 $fontS_pc: 15px;
-$fontXS_pc: 12px;
-$fontTitle_pc: 80px;
+$fontXS_pc: 15px;
+$fontTitle_pc: 65px;
 
 $fontL_sp: 20px;
 $fontM_sp: 15px;
 $fontS_sp: 10px;
 $fontXS_sp: 8px;
-$fontTitle_sp: 50px;
+$fontTitle_sp: 35px;
 
 
 $breakpoint-pc: 980px;
-$breakpoint-sp: 736px; //スマホ横向き
+$breakpoint-sp: 812px; //スマホ横向き
 
 @mixin max-screen($break-point) {
     @media screen and (max-width: $break-point) {
@@ -69,7 +69,7 @@ header{
     border-radius: 25px;
     padding: 0.5vw 2vw;
     box-shadow: 0px 3px 10px rgba(0,0,0,0.3);
-    z-index: 5;
+    z-index: 20;
     a{
         display: inline;
         font-family: 'Noteworthy-Light';
@@ -90,9 +90,9 @@ header{
     .title{
         position: absolute;
         top: 40vh;
-        left: 10vw;
+        left: 4vw;
         color: $navy;
-        z-index: 2;
+        z-index: 12;
         text-align: center;
         .main_title{
             font-family: 'Noteworthy-Bold';
@@ -110,19 +110,72 @@ header{
             }
         }
     }
-    .top_image{
+    // .top_image{
+    //     width: 60%;
+    //     height: 80%;
+    //     position: absolute;
+    //     top: 15vh;
+    //     right: 8vw;
+    //     height: 80%;
+    //     img{
+    //         width: 100%;
+    //         height: 100%;
+    //         object-fit: cover;   
+    //     }
+    // }
+    #slideshow{
         width: 60%;
         height: 80%;
         position: absolute;
-        top: 15vh;
+        top: 14vh;
         right: 8vw;
-        height: 80%;
-        img{
+        p{
             width: 100%;
             height: 100%;
-            object-fit: cover;   
+            position: absolute;
+            top: 0;
+            left:0;
+            z-index: 8;
+            opacity: 0.0; 
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;  
+            }
+            a{  
+                width: 15%;
+                height: $fontXS_pc * 2;
+                color: $navy;
+                // background-color: $lightpink;
+                border: solid 0.5px $navy;
+                font-family: 'UtsukushiFONT';
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: $fontXS_pc;
+                @include max-screen($breakpoint_sp) {
+                    font-size: $fontXS_sp;
+                    height: $fontXS_sp * 2;
+                }
+                position: absolute;
+                bottom: 3%;
+                right: 5%;
+                z-index: 11;
+                text-decoration: none;
+                &:hover{
+                    background-color: $lightpink;
+                }
+            }
+        }
+        .active {
+            z-index: 10;
+            opacity: 1.0;
+        }
+        .last-active {
+            z-index: 9;
         }
     }
+
 }
 
 .caution{
@@ -139,10 +192,11 @@ header{
 nav{
     width: 100vw;
     height: $fontM_pc*2;
+    margin-top: 2vh;
+    margin-bottom: 6vh;
     @include max-screen($breakpoint_sp) {
         height: $fontM_sp*2;
     }
-    margin-top: 2vh;
     ul{
         width: 100%;
         height: 100%;
@@ -214,41 +268,82 @@ section{
 
 .section_title{
     font-family: 'Noteworthy-Light';
-    font-size: $fontM_pc;
+    font-size: $fontL_pc;
     @include max-screen($breakpoint_sp) {
-        font-size: $fontM_sp;
+        font-size: $fontL_sp;
     }
     text-align: center;
 }
 
+.section_subTitle{
+    // padding-bottom: 4vh;
+    text-align: center;
+    font-size: $fontS_pc;
+    @include max-screen($breakpoint_sp) {
+        font-size: $fontS_sp;
+    }
+    font-family: 'UtsukushiFONT';
+}
+
 .works{
     width: 100vw;
-    background-color: $navy;
-    padding-bottom: 4vh;
+    // background-color: $navy;
+    background-color: white;
+    padding-bottom: 2vh;
     .section_title{
-        color: white;
-        padding-bottom: 4vh;
+        // color: white;
+        color: $navy;
+        padding-bottom: 1vh;
+    }
+    .section_subTitle{
+        color: $navy;
+        padding-bottom: 8vh;
     }
     .work_list{
-        width: 80vw;
+        width: 60vw;
         margin: 0 auto 0;
-        .works_03{
+        .works_hr{
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
-            margin-bottom: 4vh;
+            margin-bottom: 6vh;
+            // .work_space{
+            //     width: (55vw / 3);
+            //     height: 30vh;
+            //     background-color: $navy;
+            //     text-align: center;
+            // }
             .work_photo{
-                width: (55vw / 3);
+                width: (45vw / 2);
+                // width: 98%;
                 transition: all 0.3s ease;
-                background: $lightorange;
+                background: $navy;
+                text-align: center;
+                padding-bottom: 1vh;
                 img{
                     opacity: 1;
                     width: 100%;
-                    height: 100%;
+                    // height: 100%;
+                    padding: 2vh 2vh 0 2vh;
                     &:hover{
                         opacity: 0.7;
                     }
                 }
+                a{
+                    text-decoration: none;
+                    color: white;
+                    font-size: $fontS_pc;
+                    @include max-screen($breakpoint_sp) {
+                        font-size: $fontS_sp;
+                    }
+                    font-family: 'UtsukushiFONT';
+                    
+                }
+            }
+        }
+        .work_03{
+            .work_photo{
+                width: (50vw / 3);
             }
         } 
     }
@@ -298,17 +393,20 @@ section{
 .activities{
     width: 100vw;
     color: $navy;
+    margin-bottom: 4vh;
+    // color: white;
+    // background-color: $navy;
     .section_title{
         padding-bottom: 1vh;
     }
     .section_subTitle{
         padding-bottom: 4vh;
-        text-align: center;
-        font-size: $fontS_pc;
-        @include max-screen($breakpoint_sp) {
-            font-size: $fontS_sp;
-        }
-        font-family: 'UtsukushiFONT';
+        // text-align: center;
+        // font-size: $fontS_pc;
+        // @include max-screen($breakpoint_sp) {
+        //     font-size: $fontS_sp;
+        // }
+        // font-family: 'UtsukushiFONT';
     }
     .activities_part{
         width: 90vw;

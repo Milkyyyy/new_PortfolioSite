@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @media screen and (orientation: landscape) {
   .caution {
     display: none;
@@ -146,7 +147,7 @@ header .link_works {
 
 .description {
   width: 37vw;
-  font-size: 12px;
+  font-size: 15px;
   font-family: 'UtsukushiFONT';
   color: #022c48;
   padding: 21vh 0vh 6vh 6vh;
@@ -195,7 +196,7 @@ header .link_works {
   margin: 0 auto 0;
   padding-bottom: 3vh;
   text-align: left;
-  line-height: 17px;
+  line-height: 20px;
 }
 
 @media screen and (max-width: 736px) {
@@ -314,7 +315,7 @@ header .link_works {
 
 .app_bg {
   width: 80vw;
-  font-size: 12px;
+  font-size: 15px;
   font-family: 'UtsukushiFONT';
   color: #022c48;
   background-color: #fbeee8;
@@ -328,9 +329,18 @@ header .link_works {
   }
 }
 
+.app_bg h4 {
+  padding: 0.25em 0.5em;
+  /*上下 左右の余白*/
+  background: transparent;
+  /*背景透明に*/
+  border-left: solid 5px #022c48;
+  /*左線*/
+}
+
 .app_bg p {
   margin-bottom: 1em;
-  line-height: 17px;
+  line-height: 20px;
 }
 
 @media screen and (max-width: 736px) {
@@ -351,7 +361,7 @@ header .link_works {
   width: 25vw;
   font-family: 'UtsukushiFONT';
   color: #022c48;
-  font-size: 12px;
+  font-size: 15px;
   display: flex;
   align-items: center;
   justify-content: flex-end;

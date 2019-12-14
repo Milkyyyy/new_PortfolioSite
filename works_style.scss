@@ -5,7 +5,7 @@ $lightpink: #fbeee8;
 $fontL_pc: 35px;
 $fontM_pc: 25px;
 $fontS_pc: 15px;
-$fontXS_pc: 12px;
+$fontXS_pc: 15px;
 $fontTitle_pc: 80px;
 
 $fontL_sp: 20px;
@@ -328,6 +328,11 @@ header{
   background-color: $lightpink;
   padding: 6vh;
   margin: 6vh auto 6vh;
+  h4{
+    padding: 0.25em 0.5em;/*上下 左右の余白*/
+    background: transparent;/*背景透明に*/
+    border-left: solid 5px $navy;/*左線*/
+  }
   p{
     margin-bottom: 1em;
     line-height: $fontXS_pc + 5px;
