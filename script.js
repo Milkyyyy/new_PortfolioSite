@@ -1,5 +1,13 @@
 $(function() {
 
+  $(window).on('load',function(){
+    $("#loadingWrap").delay(1000).fadeOut('slow');
+  });
+  function loaderClose(){
+    $("#loadingWrap").fadeOut('slow');
+  }
+  setTimeout(loaderClose,10000);
+
   $('.link_top').click(function() {
 
     var top = $('#top').offset().top;
