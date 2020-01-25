@@ -1,12 +1,15 @@
-$(function() {
+$(window).on('load',function(){
+  $("#loadingWrap").delay(1000).fadeOut('slow');
+  console.log("読み込み完了");
+});
 
-  $(window).on('load',function(){
-    $("#loadingWrap").delay(1000).fadeOut('slow');
-  });
-  function loaderClose(){
-    $("#loadingWrap").fadeOut('slow');
-  }
-  setTimeout(loaderClose,10000);
+function loaderClose(){
+  $("#loadingWrap").fadeOut('slow');
+}
+
+setTimeout(loaderClose,10000);
+
+$(function() {
 
   $('.link_top').click(function() {
 
