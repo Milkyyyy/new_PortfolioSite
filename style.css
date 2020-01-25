@@ -501,7 +501,7 @@ section {
 
 .activities .activities_part .con_poster {
   left: 10%;
-  width: 60%;
+  width: 80%;
   opacity: 0;
   z-index: 0;
 }
@@ -515,14 +515,14 @@ section {
 }
 
 .activities .activities_part .con_poster .con_img .DM_img {
-  width: 100%;
+  width: 80%;
   height: auto;
   padding: 1vh;
   display: inline-block;
 }
 
 .activities .activities_part .con_poster .con_img .pos_img {
-  width: 50%;
+  width: 40%;
   height: auto;
   padding: 1vh;
   display: inline-block;
