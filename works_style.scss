@@ -340,6 +340,29 @@ header{
       line-height: $fontXS_sp + 5px;
   }
   }
+  .prott{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    p{
+      margin-bottom: 1em;
+      line-height: $fontXS_pc + 5px;
+      @include max-screen($breakpoint_sp) {
+        line-height: $fontXS_sp + 5px;
+    }
+    }
+    .prott_img{
+      width: 100%;
+      margin-right: 3vh;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .prott_text{
+      width: 50%;
+    }
+  }
   a{
     color: $navy;
   }

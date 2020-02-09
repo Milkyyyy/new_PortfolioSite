@@ -349,6 +349,37 @@ header .link_works {
   }
 }
 
+.app_bg .prott {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.app_bg .prott p {
+  margin-bottom: 1em;
+  line-height: 20px;
+}
+
+@media screen and (max-width: 736px) {
+  .app_bg .prott p {
+    line-height: 13px;
+  }
+}
+
+.app_bg .prott .prott_img {
+  width: 100%;
+  margin-right: 3vh;
+}
+
+.app_bg .prott .prott_img img {
+  width: 100%;
+  height: 100%;
+}
+
+.app_bg .prott .prott_text {
+  width: 50%;
+}
+
 .app_bg a {
   color: #022c48;
 }
