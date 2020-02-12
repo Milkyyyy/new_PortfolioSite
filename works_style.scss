@@ -16,7 +16,7 @@ $fontTitle_sp: 50px;
 
 
 $breakpoint-pc: 980px;
-$breakpoint-sp: 736px; //スマホ横向き
+$breakpoint-sp: 850px; //スマホ横向き
 
 @mixin max-screen($break-point) {
     @media screen and (max-width: $break-point) {

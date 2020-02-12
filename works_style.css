@@ -42,7 +42,7 @@ header a {
   padding: 0 1vw;
 }
 
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 850px) {
   header a {
     font-size: 10px;
   }
@@ -73,7 +73,7 @@ header .link_works {
   font-size: 25px;
 }
 
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 850px) {
   .fixed_title .main_title {
     font-size: 15px;
   }
@@ -84,7 +84,7 @@ header .link_works {
   font-size: 15px;
 }
 
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 850px) {
   .fixed_title .sub_title {
     font-size: 10px;
   }
@@ -125,7 +125,7 @@ header .link_works {
   z-index: 3;
 }
 
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 850px) {
   .top .title {
     font-size: 50px;
   }
@@ -156,7 +156,7 @@ header .link_works {
   text-align: center;
 }
 
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 850px) {
   .description {
     font-size: 8px;
   }
@@ -174,7 +174,7 @@ header .link_works {
   padding-bottom: 3vh;
 }
 
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 850px) {
   .description .app_title {
     font-size: 8px;
   }
@@ -199,7 +199,7 @@ header .link_works {
   line-height: 20px;
 }
 
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 850px) {
   .description .app_overview {
     line-height: 13px;
   }
@@ -323,7 +323,7 @@ header .link_works {
   margin: 6vh auto 6vh;
 }
 
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 850px) {
   .app_bg {
     font-size: 8px;
   }
@@ -343,7 +343,7 @@ header .link_works {
   line-height: 20px;
 }
 
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 850px) {
   .app_bg p {
     line-height: 13px;
   }
@@ -360,7 +360,7 @@ header .link_works {
   line-height: 20px;
 }
 
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 850px) {
   .app_bg .prott p {
     line-height: 13px;
   }
@@ -400,7 +400,7 @@ header .link_works {
   margin-bottom: 3vh;
 }
 
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 850px) {
   .qr {
     font-size: 8px;
   }
@@ -429,7 +429,7 @@ header .link_works {
   position: relative;
 }
 
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 850px) {
   .arrow {
     font-size: 10px;
   }
