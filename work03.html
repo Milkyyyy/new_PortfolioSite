@@ -7,7 +7,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover">
 	<link rel="stylesheet" href="./works_style.min.css" type="text/css" />
 	<link rel="stylesheet" href="./ress.min.css" type="text/css" />
-	<script type="text/javascript" src="./jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="./jquery-3.4.1.min.js"></script>
+  <script>
+    (function(d) {
+      var config = {
+        kitId: 'zkc7nup',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
 </head>
 
 <body>
@@ -55,26 +65,30 @@
   </div>
 
   <div class="app_bg app_bg01">
-    <h4>概要</h4>
-    <br>
-    <p>
-      これはタスクの締切日と共に目標の日を設定し、締切日までに必ずタスクを終わらせることを目指すためのアプリです。トップ画面では目標の日までのカウントダウンが行われているので、その日までにタスクを完了したいという気持ちになれます！私自身、ギリギリにまでタスクは残したくないけど、期間が長いタスクなどはついつい後回しにしがちなので、このアプリを使って、目標の日だけを見てタスクを終わらせるようにしています。
-    </p>
-    <br>
-    <h4>きっかけ</h4>
-    <br>
-    <p>
+    <div class="text_part">
+      <h4>概要</h4>
+      <br>
+      <p>
+        これはタスクの締切日と共に目標の日を設定し、締切日までに必ずタスクを終わらせることを目指すためのアプリです。トップ画面では目標の日までのカウントダウンが行われているので、その日までにタスクを完了したいという気持ちになれます！私自身、ギリギリにまでタスクは残したくないのですが、期間が長いタスクなどはついつい後回しにしがちなので、このアプリを使って、目標の日だけを見てタスクを終わらせるようにしています。
+      </p>
+      <br>
+      <h4>きっかけ</h4>
+      <br>
+      <p>
         名古屋市立大学芸術工学部の学生による作品展示会"卓展"のために制作しました。 Ruby on Railsの勉強を兼ねての制作で、先輩の力を借りながら初めてアプリを制作しました。<br>
         ターゲットユーザーを自分にして考えたので、自分好みのポップなデザインにし、設定や新規作成などのボタンは誰が見てもわかりやすいようにユーザビリティテストを実施して設定しました。
-    </p>
-    <br>
-    <h4>今回での学び</h4>
-    <br>
-    <div class="prott">
-      <p class="prott_img"><img src="./images/works/work03/prott_img.jpg" alt=""></p>
-      <p>
-          自分好みのデザインにしつつ、誰が使ってもわかりやすいUIにすることを意識して制作しました。Prottと手書きのシートを用いてユーザビリティテストを行い、アイコンの位置やアイコンのデザインを決めました。風船のモチーフを前面に押し出したかったので、新規作成のアイコンは邪魔にならないようにヘッダーに設置し、ポップさもあり新規作成とわかってもらいやすい鉛筆のデザインを用いました。自分がデザインして確かめていると、使い方を簡単に理解できる気分になってしまうので、他の人にテストしてもらうことがとても重要だと身にしみてわかりました。
       </p>
+    </div>
+    <br>
+    <div class="text_part">
+      <h4>今回での学び</h4>
+      <br>
+      <div class="prott">
+        <p class="prott_img"><img src="./images/works/work03/prott_img.jpg" alt=""></p>
+        <p>
+            自分好みのデザインにしつつ、誰が使ってもわかりやすいUIにすることを意識して制作しました。Prottと手書きのシートを用いてユーザビリティテストを行い、アイコンの位置やアイコンのデザインを決めました。風船のモチーフを前面に押し出したかったので、新規作成のアイコンは邪魔にならないようにヘッダーに設置し、ポップさもあり新規作成とわかってもらいやすい鉛筆のデザインを用いました。自分がデザインして確かめていると、使い方を簡単に理解できる気分になってしまうので、他の人にテストしてもらうことがとても重要だと身にしみてわかりました。
+        </p>
+      </div>
     </div>
   </div>
   <div class="qr">
@@ -85,6 +99,7 @@
   </div>
   <div class="arrow">
     <div class="arrowP"><a href="./work02.html"> << prev </a></div>
+    <div class="back"><a href="./home.html#works"> back to Works </a></div>
     <div class="arrowN"><a href="./work04.html"> next >></a></div>
   </div>
   <footer></footer>

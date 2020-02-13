@@ -193,7 +193,7 @@ header a {
   height: 30px;
   color: #022c48;
   border: solid 0.5px #022c48;
-  font-family: 'UtsukushiFONT';
+  font-family: tbchibirgothicplusk-pro, 'UtsukushiFONT';
   display: flex;
   justify-content: center;
   align-items: center;
@@ -232,7 +232,7 @@ header a {
   background-color: #022c48;
   color: #fbeee8;
   font-size: 10px;
-  font-family: 'UtsukushiFONT';
+  font-family: tbchibirgothicplusk-pro, 'UtsukushiFONT';
   text-align: center;
 }
 
@@ -307,7 +307,7 @@ section {
 .aboutMe .my_name {
   font-size: 35px;
   color: #022c48;
-  font-family: 'UtsukushiFONT';
+  font-family: tbchibirgothicplusk-pro, 'UtsukushiFONT';
   margin: 4vh 0;
 }
 
@@ -321,7 +321,7 @@ section {
   font-size: 15px;
   line-height: 145%;
   color: #022c48;
-  font-family: 'UtsukushiFONT';
+  font-family: tbchibirgothicplusk-pro, 'UtsukushiFONT';
   margin-bottom: 4vh;
 }
 
@@ -346,7 +346,7 @@ section {
 .section_subTitle {
   text-align: center;
   font-size: 15px;
-  font-family: 'UtsukushiFONT';
+  font-family: tbchibirgothicplusk-pro, 'UtsukushiFONT';
 }
 
 @media screen and (max-width: 812px) {
@@ -387,6 +387,7 @@ section {
   width: 22.5vw;
   transition: all 0.3s ease;
   background: #022c48;
+  border-radius: 10px;
   text-align: center;
   padding-bottom: 1vh;
 }
@@ -405,7 +406,7 @@ section {
   text-decoration: none;
   color: white;
   font-size: 15px;
-  font-family: 'UtsukushiFONT';
+  font-family: tbchibirgothicplusk-pro, 'UtsukushiFONT';
 }
 
 @media screen and (max-width: 812px) {
@@ -450,7 +451,7 @@ section {
 
 .skill .skill_part .skill_box .skill_comment {
   font-size: 15px;
-  font-family: 'UtsukushiFONT';
+  font-family: tbchibirgothicplusk-pro, 'UtsukushiFONT';
   margin-bottom: 2vh;
 }
 
@@ -517,7 +518,7 @@ section {
 
 .activities .activities_part .activity_box .activity_comment {
   font-size: 15px;
-  font-family: 'UtsukushiFONT';
+  font-family: tbchibirgothicplusk-pro, 'UtsukushiFONT';
 }
 
 @media screen and (max-width: 812px) {
@@ -535,7 +536,7 @@ section {
   color: #022c48;
   font-size: 15px;
   line-height: 20px;
-  font-family: 'UtsukushiFONT';
+  font-family: tbchibirgothicplusk-pro, 'UtsukushiFONT';
   padding: 3vh;
   transition: all .3s;
 }

@@ -218,7 +218,8 @@ header{
                 color: $navy;
                 // background-color: $lightpink;
                 border: solid 0.5px $navy;
-                font-family: 'UtsukushiFONT';
+                // font-family: 'UtsukushiFONT';
+                font-family: tbchibirgothicplusk-pro, 'UtsukushiFONT';
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -255,7 +256,8 @@ header{
     background-color: $navy;
     color: $lightpink;
     font-size: $fontS_sp;
-    font-family: 'UtsukushiFONT';
+    // font-family: 'UtsukushiFONT';
+    font-family: tbchibirgothicplusk-pro, 'UtsukushiFONT';
     text-align: center;
 }
 
@@ -320,7 +322,8 @@ section{
             font-size: $fontL_sp;
         }
         color: $navy;
-        font-family: 'UtsukushiFONT';
+        // font-family: 'UtsukushiFONT';
+        font-family: tbchibirgothicplusk-pro, 'UtsukushiFONT';
         margin: 4vh 0;
     }
     
@@ -331,7 +334,8 @@ section{
         }
         line-height: 145%;
         color: $navy;
-        font-family: 'UtsukushiFONT';
+        // font-family: 'UtsukushiFONT';
+        font-family: tbchibirgothicplusk-pro, 'UtsukushiFONT';
         margin-bottom: 4vh;
     }
 }
@@ -352,7 +356,8 @@ section{
     @include max-screen($breakpoint_sp) {
         font-size: $fontS_sp;
     }
-    font-family: 'UtsukushiFONT';
+    // font-family: 'UtsukushiFONT';
+    font-family: tbchibirgothicplusk-pro, 'UtsukushiFONT';
 }
 
 .works{
@@ -388,6 +393,7 @@ section{
                 // width: 98%;
                 transition: all 0.3s ease;
                 background: $navy;
+                border-radius: 10px;
                 text-align: center;
                 padding-bottom: 1vh;
                 img{
@@ -406,7 +412,8 @@ section{
                     @include max-screen($breakpoint_sp) {
                         font-size: $fontS_sp;
                     }
-                    font-family: 'UtsukushiFONT';
+                    // font-family: 'UtsukushiFONT';
+                    font-family: tbchibirgothicplusk-pro, 'UtsukushiFONT';
                     
                 }
             }
@@ -445,7 +452,8 @@ section{
                 @include max-screen($breakpoint_sp) {
                     font-size: $fontS_sp;
                 }
-                font-family: 'UtsukushiFONT';
+                // font-family: 'UtsukushiFONT';
+                font-family: tbchibirgothicplusk-pro, 'UtsukushiFONT';
                 margin-bottom: 2vh;
             }
             .each_skill{
@@ -507,7 +515,8 @@ section{
                 @include max-screen($breakpoint_sp) {
                     font-size: $fontS_sp;
                 }
-                font-family: 'UtsukushiFONT';
+                // font-family: 'UtsukushiFONT';
+                font-family: tbchibirgothicplusk-pro, 'UtsukushiFONT';
             }
         }
         .activity_content{
@@ -524,7 +533,8 @@ section{
                 font-size: $fontXS_sp;
                 line-height: $fontXS_sp + 5px;
             }
-            font-family: 'UtsukushiFONT';
+            // font-family: 'UtsukushiFONT';
+            font-family: tbchibirgothicplusk-pro, 'UtsukushiFONT';
             padding: 3vh;
             transition: all .3s;
         }
