@@ -332,11 +332,6 @@ header .link_works {
   }
 }
 
-.app_bg .text_part {
-  width: 45%;
-  margin: 3vh;
-}
-
 .app_bg h4 {
   padding: 0.25em 0.5em;
   /*上下 左右の余白*/
@@ -346,36 +341,61 @@ header .link_works {
   /*左線*/
 }
 
-.app_bg p {
+.app_bg .text_part {
+  width: 45%;
+  margin: 3vh;
+}
+
+.app_bg .text_part h4 {
+  padding: 0.25em 0.5em;
+  /*上下 左右の余白*/
+  background: transparent;
+  /*背景透明に*/
+  border-left: solid 5px #022c48;
+  /*左線*/
+}
+
+.app_bg .text_part p {
   margin-bottom: 1em;
   line-height: 25px;
 }
 
 @media screen and (max-width: 850px) {
-  .app_bg p {
+  .app_bg .text_part p {
     line-height: 13px;
   }
 }
 
-.app_bg .prott p {
-  margin-bottom: 1em;
-  line-height: 25px;
+.app_bg .text_part .ex_img {
+  width: 80%;
+  margin: 0 auto 3vh;
+  text-align: center;
 }
 
-@media screen and (max-width: 850px) {
-  .app_bg .prott p {
-    line-height: 18px;
-  }
-}
-
-.app_bg .prott .prott_img {
-  width: 100%;
-  margin-right: 3vh;
-}
-
-.app_bg .prott .prott_img img {
+.app_bg .text_part .ex_img img {
   width: 100%;
   height: 100%;
+}
+
+.app_bg .text_part .ex_img video {
+  width: 100%;
+  height: 100%;
+}
+
+.app_bg .text_part .ex_img .img_60 {
+  width: 75%;
+}
+
+.app_bg .text_part .ex_img .img_40 {
+  width: 50%;
+}
+
+.app_bg .text_part .mr_t {
+  margin: 3vh auto 3vh;
+}
+
+.app_bg .text_part .mr_b {
+  margin: 0 auto 6vh;
 }
 
 .app_bg a {

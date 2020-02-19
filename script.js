@@ -51,6 +51,28 @@ $(function() {
 
   });
 
+  $('#view_all').click(function() {
+    $('.works_03').slideDown(1000);
+    $(".works_03").css('display','flex');
+    $("#view_all").css('display','none');
+    $("#close").css('display','flex');
+    var speed = 800;
+    var workList_top = $('#workList_top').offset().top;
+    $('html, body').animate({scrollTop:workList_top},speed);
+    return false;
+  });
+
+  $('#close').click(function() {
+    // $(".works_03").css('display','none');
+    $('.works_03').slideUp(1000);
+    $("#view_all").css('display','flex');
+    $("#close").css('display','none');
+    var speed = 800;
+    var works_top = $('#works').offset().top;
+    $('html, body').animate({scrollTop:works_top},speed);
+    return false;
+  });
+
   $('.sydney').hover(
     function() {
 

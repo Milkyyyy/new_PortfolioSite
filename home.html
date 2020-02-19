@@ -30,22 +30,22 @@
 	<a href="#aboutMe" class="link_aboutMe">About Me</a>
 	
 </header>
-<div id="loadingWrap">
+<!-- <div id="loadingWrap">
 	<div class="spinner">
 		<div class="dot1"></div>
 		<div class="dot2"></div>
 	</div>
-</div>
+</div> -->
 <div class="top" id="top">
 	<div class="title">
 		<p class="main_title">RINA IMAI</p>
 		<p class="sub_title">Portfolio</p>
 	</div>
-	<!-- <p class="top_image">
+	<p class="top_image">
 		<img src="./images/top/top_image.JPG" alt="">
-	</p> -->
-	<div id="slideshow">
-			<p class="active">
+	</p>
+	<!-- <div id="slideshow"> -->
+			<!-- <p class="active">
 					<img src="./images/top/top_work01.jpg" alt="Goolen">
 				<a href="./work01.html">
 					more >>
@@ -68,28 +68,27 @@
 				<a href="./work04.html">
 					more >>
 				</a>
-			</p>
-			<p>
+			</p> -->
+			<!-- <p>
 				<img src="./images/top/top_image.JPG" alt="画像1">
 			</p>
-			<!-- <img src="./images/top/top_image.JPG" alt="画像1" class="active">
-			<img src="./images/top/work01_img.png" alt="画像2">
-			<img src="./images/top/work02_img.png" alt="画像3">
-			<img src="./images/top/work03_img.png" alt="画像4">
-			<img src="./images/top/work04_img.png" alt="画像5"> -->
-	</div>
+	</div> -->
 </div>
 <div class="caution">
 	スマートフォンの場合横向きにしてご覧ください
 </div>
-<nav>
+<div class="nav_scroll">
+	<span></span>Scroll
+</div>
+<!-- <nav>
 	<ul>
 		<li><a href="#works" class="link_works">Works</a></li>
 		<li><a href="#activities" class="link_activities">Activities</a></li>
 		<li><a href="#skill" class="link_skill">Skill</a></li>
 		<li><a href="#aboutMe" class="link_aboutMe">About Me</a></li>
 	</ul>
-</nav>
+</nav> -->
+
 <section class="works" id="works">
 		<p class="section_title">
 			Works
@@ -97,67 +96,75 @@
     <p class="section_subTitle">
 			特に力を入れたこと
 		</p>
-		<div class="work_list">
-			<div class="works_hr">
-        <!-- <p class="work_space"> -->
-        <p class="work_photo works_02">
-            <a href="./work01.html">
-                <img src="./images/top/work01_img.png" alt="">
-								課題解決/フロントエンド
-            </a>
-          </p>
-        <!-- </p> -->
-          <p class="work_photo">
-            <a href="./work02.html">
-              <img src="./images/top/work02_img.png" alt="">
-							課題解決/ハッカソン
-            </a>
-          </p>
+		<div class="work_list" id="workList_top">
+			<div class="works_hr works_04">
+        <div class="work_photo bd_r">
+					<a href="./work01.html">
+						<img src="./images/top/work01_img.png" alt="">
+						<p class="font_S cen">デジタルサイネージ</p>
+						<p class="font_XS">大学祭のためにインタラクティブな案内板を作成しました。フロントエンドを担当しました。</p>
+						<div class="more font_S cen">more >></div>
+					</a>
+				</div>
+				<div class="work_photo bd_r">
+					<a href="./work02.html">
+						<img src="./images/top/work02_img.png" alt="">
+						<p class="font_S cen">I'm fine</p>
+						<p class="font_XS">学生ハッカソンで作成した着こなしチェックアプリです。デザイン・フロントエンドを担当しました。</p>
+						<div class="more font_S cen">more >></div>
+					</a>
+				</div>
+				<div class="work_photo bd_r">
+						<a href="./work03.html">
+							<img src="./images/top/work03_img.png" alt="">
+							<p class="font_S cen">Goolen</p>
+							<p class="font_XS">タスクを余裕をもって終わらせることを助けるアプリです。デザインとコーディングをしました。</p>
+						<div class="more font_S cen">more >></div>
+						</a>
+					</div>
+				<div class="work_photo">
+					<a href="./work04.html">
+						<img src="./images/top/work04_img.png" alt="">
+						<p class="font_S cen">Chob!t</p>
+						<p class="font_XS">早食いを防止するお箸と連動アプリです。アプリのデザインとフロントエンドを担当しました。</p>
+						<div class="more font_S cen">more >></div>
+					</a>
+				</div>
 			</div>
-			<div class="works_hr">
-          <p class="work_photo">
-              <a href="./work03.html">
-                <img src="./images/top/work03_img.png" alt="">
-								UIデザイン/Ruby on Rails
-              </a>
-            </p>
-					<p class="work_photo">
-							<a href="./work04.html">
-								<img src="./images/top/work04_img.png" alt="">
-								IoT/フロントエンド
-              </a>
-						</p>
+			<div id="view_all">view all</div>
+			<!-- <p class="section_title_study">
+				Studies
+			</p>
+			<p class="section_subTitle">
+				学んだこと
+			</p> -->
+			<div class="works_hr works_03 none">
+          <div class="work_photo bd_r">
+						<a href="./work05.html">
+							<img src="./images/top/work05_img.png" alt="">
+							<p class="font_S cen">モーションキャプチャ</p>
+							<p class="font_XS">モーションキャプチャでキャラクターの動きを作成したゲームです。モーションキャプチャとUnityを担当しました。</p>
+							<div class="more font_S cen">more >></div>
+						</a>
+					</div>
+					<div class="work_photo bd_r">
+						<a href="./work06.html">
+							<img src="./images/top/work06_img.png" alt="">
+							<p class="font_S cen">ポートフォリオサイト</p>
+							<p class="font_XS">大学の作品展に出品したポートフォリオサイトです。デザインとコーディングをしました。</p>
+							<div class="more font_S cen">more >></div>
+						</a>
+					</div>
+					<div class="work_photo">
+						<a href="./work07.html">
+							<img src="./images/top/work07_img.png" alt="">
+							<p class="font_S cen">お絵かき神経衰弱</p>
+							<p class="font_XS">Websocket通信を用いて２台のPCで遊ぶゲームです。</p>
+							<div class="more font_S cen">more >></div>
+						</a>
+					</div>
 			</div>
-			<div class="works_hr work_03">
-          <p class="work_photo">
-							<a href="./work05.html">
-								<img src="./images/top/work05_img.png" alt="">
-              モーションキャプチャ
-              </a>
-						</p>
-						<p class="work_photo">
-							<a href="./work06.html">
-								<img src="./images/top/work06_img.png" alt="">
-                Webデザイン
-              </a>
-						</p>
-					<p class="work_photo">
-							<a href="./work07.html">
-								<img src="./images/top/work07_img.png" alt="">
-                Web Socket
-              </a>
-						</p>
-						<!-- <p class="work_photo hidden"> -->
-							<!-- <a href="./work08.html">
-								<img src="./images/top/work05_img.png" alt="">
-							</a> -->
-						<!-- </p> -->
-						<!-- <p class="work_photo hidden"> -->
-							<!-- <a href="./work09.html">
-								<img src="./images/top/work06_img.png" alt="">
-							</a> -->
-						<!-- </p> -->
-			</div>
+			<div id="close">close</div>
 		</div>
 </section>
 
@@ -201,23 +208,22 @@
 			</div>
 			<div class="activity_content con_sydney">
 				2018/8〜2018/9<br>
-				大学生になったら必ず行きたいと思っていた留学に行ってきました。冬のシドニーへ１ヶ月。<br>
-				平日は語学学校へ通い、授業後と土日はシドニーを遊び尽くしました。<br>
-				ホームステイ先ではとても親切にしてもらい、ホストファミリーとたくさん話して、自分の英語が伝わる楽しさと、もっと勉強してバイリンガルになりたいという気持ちを持って帰国しました。<br>
-				シドニーにはいろんな人種の人が暮らしていて、語学学校も多国籍だったので、文化の違いや言葉の違いを感じながらも、たくさんの経験をすることができました。
+				冬のシドニーで語学留学をしました。<br>
+				ホストファミリーとたくさん話して、自分の英語が伝わる楽しさを感じました。<br>
+				また、シドニーにはたくさんの人種の人が暮らしています。語学学校も多国籍だったので、文化の違いや言葉の違いを感じながらも、たくさんの経験をすることができました。
 			</div>
 			<div class="activity_content con_intern">
 				2019/9<br>
 				株式会社エイチームの3daysエンジニアインターンに参加してきました<br>
-				チーム開発を初めて経験し、話し合うことや役割分担の大切さを感じました。また、技術力はもちろん、ユーザーの目線になって課題解決の方法を考えていく工程がとても大事なんだとよくわかり、技術力をあげるだけでなく、いろんな視点を持てるようにするという目標もできました。
+				チーム開発を初めて経験し、話し合うことや役割分担の大切さを感じました。また、課題解決の方法を考えていく際に、ユーザーの視点から考えることの大切さを再確認できました。実装の技術力をあげるだけでなく、いろんな視点を持てるようにするという目標ができました。
 			</div>
 			<div class="activity_content con_workshop">
 					2017・2018・2019/10<br>
-					大学に入学してから毎年芸工祭ワークショップ部署に所属し、学校祭でワークショップを開催しています。主に、絞り染体験・建築模型体験・製本体験を行なっています。ワークショップ部署での活動はどんな参加者が楽しんでくれるか、どんなところで参加者は作業につまずきやすいかを考えて、毎年グレードアップした企画を用意しています。参加者のみなさんとたくさんお話しして、笑顔で帰ってもらえることがとても楽しいです！
+					毎年秋に開催される芸工祭でワークショップ部署に所属し、ワークショップを開催しています。主に、絞り染体験・建築模型体験・製本体験を行なっています。小さい子供からお年寄りまで多くの人が参加してくれるため、難しい作業ばかりで楽しめないことがないよう工夫して、毎年グレードアップした企画を用意しています。参加者のみなさんとたくさんお話しして、笑顔で帰ってもらえることにとてもやりがいを感じています！
 			</div>
 			<div class="activity_content con_othlohack">
 				2019/11<br>
-				OthloHackという学生のためのハッカソンに参加しました。様々な分野の学生が集まっているので、自分1人じゃ開発できないバックエンドの部分から、デザイン・フロントまで分担して、一つのプロトタイプを制作することができました。チームでアイデアについてしっかり話し合うことで、いかにアイデアが大事かということが身にしみてわかりました。
+				OthloHackという学生のためのハッカソンに参加しました。様々な専攻の学生が集まっているので、自分のアイデアを形にする際に、きちんと情報共有しあうことの大切さがわかりました。また、短時間でのアイデア出しにとても苦戦し、普段からアイデアの引き出しを増やしておきたいと思いました。
 			</div>
 			<div class="activity_content con_poster">
 				2017/7〜<br>
@@ -247,7 +253,8 @@
           HTML/CSS<br>
           JavaScript<br>
           jQuery<br>
-          Illustrator
+					Illustrator<br>
+					XD
         </div>
       </div>
       <div class="skill_box">
@@ -261,7 +268,7 @@
           Unity(c#)<br>
           Java<br>
           Processing<br>
-          Photoshop
+					Photoshop
         </div>
       </div>
       <div class="skill_box">
