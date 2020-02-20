@@ -317,6 +317,32 @@ header .link_works {
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.6);
 }
 
+.app_images_img02_bImg01 {
+  width: 60vw;
+  display: flex;
+  justify-content: space-around;
+  padding: 21vh 6vh 6vh 0vh;
+}
+
+.app_images_img02_bImg01 p {
+  width: 10vw;
+  height: auto;
+}
+
+.app_images_img02_bImg01 p img {
+  width: 100%;
+}
+
+.app_images_img02_bImg01 .bImg {
+  width: 30vw;
+  margin: auto;
+}
+
+.app_images_img02_bImg01 .bImg img {
+  width: 100%;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.6);
+}
+
 .app_bg {
   width: 80vw;
   font-size: 15px;
@@ -403,6 +429,44 @@ header .link_works {
 }
 
 .app_bg .text_part .mr_b {
+  margin-bottom: 3vh;
+}
+
+.app_bg .text_part100 .ex_img {
+  width: 100%;
+}
+
+.app_bg .text_part100 .ex_img img {
+  width: 100%;
+  height: 100%;
+}
+
+.app_bg .text_part100 .ex_img video {
+  width: 100%;
+  height: 100%;
+}
+
+.app_bg .text_part100 .ex_img .img_80 {
+  width: 80%;
+}
+
+.app_bg .text_part100 .ex_img .img_60 {
+  width: 60%;
+}
+
+.app_bg .text_part100 .ex_img .img_40 {
+  width: 40%;
+}
+
+.app_bg .text_part100 .ex_img .img_20 {
+  width: 20%;
+}
+
+.app_bg .text_part100 .mr_t {
+  margin-top: 3vh;
+}
+
+.app_bg .text_part100 .mr_b {
   margin-bottom: 3vh;
 }
 
