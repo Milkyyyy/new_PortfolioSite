@@ -56,6 +56,10 @@ $breakpoint-sp: 812px; //スマホ横向き
     src:url('./fonts/UtsukushiFONT.otf');
 }
 
+html body{
+    overflow-x: hidden;
+}
+
 .hidden{
     visibility: hidden;
 }

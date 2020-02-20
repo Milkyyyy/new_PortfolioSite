@@ -20,6 +20,10 @@
   src: url("./fonts/UtsukushiFONT.otf");
 }
 
+html body {
+  overflow-x: hidden;
+}
+
 .hidden {
   visibility: hidden;
 }

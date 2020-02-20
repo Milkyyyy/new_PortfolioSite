@@ -59,6 +59,10 @@ $breakpoint-sp: 850px; //スマホ横向き
 // font-family: tbchibirgothicplusk-pro, sans-serif;
 // font-family: tbchibirgothicplusk-pro, 'UtsukushiFONT';
 
+html body{
+  overflow-x: hidden;
+}
+
 header{
     position: fixed;
     top: 3%;
@@ -359,8 +363,8 @@ header{
       }
     }
     .ex_img{
-      width: 80%;
-      margin: 0 auto 3vh;
+      width: 100%;
+      margin: 0 auto 0;
       text-align: center;
       img{
         width: 100%;
@@ -370,18 +374,21 @@ header{
         width: 100%;
         height: 100%;
       }
+      .img_80{
+        width: 80%;
+      }
       .img_60{
-        width: 75%;
+        width: 60%;
       }
       .img_40{
-        width: 50%;
+        width: 40%;
       }
     }
     .mr_t{
-      margin: 3vh auto 3vh;
+      margin-top: 3vh;
     }
     .mr_b{
-      margin: 0 auto 6vh;
+      margin-bottom: 3vh;
     }
 
   }
