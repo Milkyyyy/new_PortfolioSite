@@ -59,6 +59,10 @@ $breakpoint-sp: 850px; //スマホ横向き
 // font-family: tbchibirgothicplusk-pro, sans-serif;
 // font-family: tbchibirgothicplusk-pro, 'UtsukushiFONT';
 
+.hidden{
+  visibility: hidden;
+}
+
 html body{
   overflow-x: hidden;
 }
@@ -343,6 +347,23 @@ header{
   .bImg{
     width: 30vw;
     margin: auto;
+    img{
+      width: 100%;
+      box-shadow: 0px 5px 10px rgba(0,0,0,0.6);
+    }
+  }
+}
+
+.app_images_onlyB02{
+  width: 55vw;
+  // height: 60vh;
+  // background-color: $lightpink;
+  display: flex;
+  justify-content: space-around;
+  padding: 21vh 6vh 6vh 0vh;
+  p{
+    width: 23vw;
+    height: auto;
     img{
       width: 100%;
       box-shadow: 0px 5px 10px rgba(0,0,0,0.6);

@@ -465,8 +465,8 @@ section {
   border-right: 1px solid white;
 }
 
-.works .work_list #view_all {
-  width: 10vw;
+.works .work_list #view_stu {
+  width: 15vw;
   height: 40px;
   font-size: 25px;
   line-height: 35px;
@@ -482,14 +482,14 @@ section {
 }
 
 @media screen and (max-width: 812px) {
-  .works .work_list #view_all {
+  .works .work_list #view_stu {
     height: 20px;
     font-size: 15px;
     line-height: 25px;
   }
 }
 
-.works .work_list #view_all:hover {
+.works .work_list #view_stu:hover {
   color: white;
   background-color: #022c48;
 }

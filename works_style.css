@@ -21,6 +21,10 @@
   src: url("./fonts/UtsukushiFONT.otf");
 }
 
+.hidden {
+  visibility: hidden;
+}
+
 html body {
   overflow-x: hidden;
 }
@@ -339,6 +343,23 @@ header .link_works {
 }
 
 .app_images_img02_bImg01 .bImg img {
+  width: 100%;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.6);
+}
+
+.app_images_onlyB02 {
+  width: 55vw;
+  display: flex;
+  justify-content: space-around;
+  padding: 21vh 6vh 6vh 0vh;
+}
+
+.app_images_onlyB02 p {
+  width: 23vw;
+  height: auto;
+}
+
+.app_images_onlyB02 p img {
   width: 100%;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.6);
 }

@@ -51,10 +51,10 @@ $(function() {
 
   });
 
-  $('#view_all').click(function() {
+  $('#view_stu').click(function() {
     $('.works_03').slideDown(1000);
     $(".works_03").css('display','flex');
-    $("#view_all").css('display','none');
+    $("#view_stu").css('display','none');
     $("#close").css('display','flex');
     var speed = 800;
     var workList_top = $('#workList_top').offset().top;
@@ -65,7 +65,7 @@ $(function() {
   $('#close').click(function() {
     // $(".works_03").css('display','none');
     $('.works_03').slideUp(1000);
-    $("#view_all").css('display','flex');
+    $("#view_stu").css('display','flex');
     $("#close").css('display','none');
     var speed = 800;
     var works_top = $('#works').offset().top;
