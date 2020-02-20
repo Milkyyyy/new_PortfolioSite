@@ -469,16 +469,24 @@ section {
   width: 10vw;
   height: 40px;
   font-size: 25px;
+  line-height: 35px;
   font-family: 'Noteworthy-Light';
   color: #022c48;
   margin: 3vh auto 3vh;
-  line-height: 35px;
   display: flex;
   align-items: center;
   justify-content: center;
   border: 1px solid #022c48;
   border-radius: 25px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 812px) {
+  .works .work_list #view_all {
+    height: 20px;
+    font-size: 15px;
+    line-height: 25px;
+  }
 }
 
 .works .work_list #view_all:hover {
@@ -490,16 +498,24 @@ section {
   width: 10vw;
   height: 40px;
   font-size: 25px;
+  line-height: 35px;
   font-family: 'Noteworthy-Light';
   color: #022c48;
   margin: 3vh auto 3vh;
-  line-height: 35px;
   display: none;
   align-items: center;
   justify-content: center;
   border: 1px solid #022c48;
   border-radius: 25px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 812px) {
+  .works .work_list #close {
+    height: 20px;
+    font-size: 15px;
+    line-height: 25px;
+  }
 }
 
 .works .work_list #close:hover {

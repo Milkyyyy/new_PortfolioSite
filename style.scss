@@ -556,11 +556,16 @@ section{
             width: 10vw;
             height: $fontM_pc + 15px;
             font-size: $fontM_pc;
+            line-height: $fontM_pc + 10px;
+            @include max-screen($breakpoint_sp) {
+                height: $fontM_sp + 5px;
+                font-size: $fontM_sp;
+                line-height: $fontM_sp + 10px;
+            }
             font-family: 'Noteworthy-Light';
             color: $navy;
             margin: 3vh auto 3vh;
             // background-color: white;
-            line-height: $fontM_pc + 10px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -577,11 +582,16 @@ section{
             width: 10vw;
             height: $fontM_pc + 15px;
             font-size: $fontM_pc;
+            line-height: $fontM_pc + 10px;
+            @include max-screen($breakpoint_sp) {
+                height: $fontM_sp + 5px;
+                font-size: $fontM_sp;
+                line-height: $fontM_sp + 10px;
+            }
             font-family: 'Noteworthy-Light';
             color: $navy;
             margin: 3vh auto 3vh;
             // background-color: white;
-            line-height: $fontM_pc + 10px;
             display: none;
             align-items: center;
             justify-content: center;
