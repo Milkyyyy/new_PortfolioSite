@@ -218,7 +218,7 @@ header{
     // left: 50%;
     // transform: translate(-50%,-50%);
     text-align: left;
-    line-height: $fontXS_pc + 5px;
+    line-height: $fontXS_pc + 7.5px;
     @include max-screen($breakpoint_sp) {
       line-height: $fontXS_sp + 5px;
     }
