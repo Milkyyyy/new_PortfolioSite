@@ -93,7 +93,7 @@ header{
     }
 }
 .fixed_title{
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   color: $navy;
@@ -372,7 +372,7 @@ header{
 }
 
 .app_bg{
-  width: 80vw;
+  width: 85vw;
   font-size: $fontXS_pc;
   @include max-screen($breakpoint_sp) {
     font-size: $fontXS_sp;
@@ -386,6 +386,9 @@ header{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  h3{
+    padding-bottom: 0.25em;
+  }
   h4{
     padding: 0.25em 0.5em;/*上下 左右の余白*/
     background: transparent;/*背景透明に*/

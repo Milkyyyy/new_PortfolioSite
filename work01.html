@@ -35,32 +35,34 @@
         <p class="sub_title">Portfolio</p>
       </a>
   </div>
-  <div class="top" id="top">
+  <!-- <div class="top" id="top">
     <p class="top_image">
       <img src="./images/works/work_top_image.png" alt="">
     </p>
     <div class="title">
       Works
     </div>
-  </div>
-  <div class="description">
-    <div class="caution">
-      スマートフォンの場合横向きにしてご覧ください
-    </div>
-    <p class="app_context">芸工祭2019</p>
-    <p class="app_title">デジタルサイネージ</p>
-    <!-- <p class="app_icon"><img src="./images/works/work02/icon_img.png" alt=""></p> -->
-    <div class="app_overview">
-      制作期間：2019/10<br>
-      担当：デザイン・コーディング (フロント部分)<br>
-      使用言語：HTML/CSS/JS/jQuery/Node.js/processing<br>
-      使用ツール：Illustrator/Kinect (担当外)
+  </div> -->
+  <div class="box">
+    <div class="description">
+      <div class="caution">
+        スマートフォンの場合横向きにしてご覧ください
+      </div>
+      <p class="app_context">芸工祭2019</p>
+      <p class="app_title">デジタルサイネージ</p>
+      <!-- <p class="app_icon"><img src="./images/works/work02/icon_img.png" alt=""></p> -->
+      <div class="app_overview">
+        制作期間：2019/10<br>
+        担当：デザイン・コーディング (フロント部分)<br>
+        使用言語：HTML/CSS/JS/jQuery/Node.js/processing<br>
+        使用ツール：Illustrator/Kinect (担当外)
+      </div>
     </div>
   </div>
   <div class="app_images_mov">
+    <p class="mov"><video src="./images/works/work01/mov01.mp4" loop autoplay muted playsinline></video></p>
     <p><img src="./images/works/work01/img01.png" alt=""></p>
     <p><img src="./images/works/work01/img02.png" alt=""></p>
-    <p class="mov"><video src="./images/works/work01/mov01.mp4" loop autoplay muted playsinline></video></p>
   </div>
 
 
@@ -68,14 +70,15 @@
     <div class="text_part">
       <h4>概要</h4>
       <br>
-      <p>大学祭の案内板として有志のグループで制作した、デジタルサイネージです。多くの来場者に見ていただくために、入り口に設置しました。このデジタルサイネージは来場者の動きに合わせてインタラクティブな動きをするので、体験し楽しみながら催しの内容を知ることができるようになりました。<br>
+      <h3>体験し楽しみながら催しの内容を知る</h3>
+      <p>大学祭の案内板として有志のグループで制作した、デジタルサイネージ。<br>来場者の動きに合わせてインタラクティブな動きをし、体験し楽しみながら催しの内容を知ることができる。<br>
       紹介ムービー完全版は<a href="https://youtu.be/I5ejNmCh9mg" target=”_blank”>こちら</a>
       </p>
       <br>
       <h4>目的</h4>
       <br>
       <p>
-        大学祭で行われている催しを宣伝するとともに、主にオープンキャンパスで訪れた高校生に、芸術工学部での制作活動を体験しより興味を持ってもらうために制作しました。
+        大学祭で行われている催しを宣伝するとともに、主にオープンキャンパスで訪れた高校生に、芸術工学部での制作活動を体験しより興味を持ってもらう。
       </p>
       <br>
       <p class="ex_img mr_b"><img src="./images/works/work01/ex_img03.jpg" alt="" class="img_80"></p>
@@ -84,12 +87,15 @@
     <div class="text_part">
       <h4>制作での工夫</h4>
       <br>
-      <p>
-        kinect・processingとWebページをNode.jsのWebSocketでつなぎ、人の動作を検知して画面を操作できるようにしました。私はNode.jsの部分とWebページのコーディングを担当しました。制作期間が短かったため、自分たちの持っているスキルの範囲で最大限のパフォーマンスができるように使うツールを選びました。
-        <br>
+        <h3>人の動作を検知して画面を操作</h3>
+        <p>
+        センサーはkinect・processingを使用<br>
+        WebページをNode.jsのWebSocketで接続<br>
         <p class="ex_img mr_t mr_b"><video src="./images/works/work01/ex_movie01.mp4" loop autoplay muted playsinline alt="" class="img_40"></p>
-        平常時は大学祭の紹介動画を流し、来場者が近づくと会場案内に切り替わります。会場案内画面では手を左右に動かして、催しの案内を切り替えます。
-        また、説明なしでも直感的に操作ができることを意識してこれらのデザイン・アニメーションにしました。
+        来場者が近づくと会場案内に切り替え<br>
+        会場案内画面では手を左右に動かして、催しの案内を切り替え<br>
+        <br>
+        <h3>説明なしでも直感的に操作ができるよう意識したこと</h3>
         <br>■ 手の動かす向きと画面の動く向きを同じようにする
         <br>■ 横に控えている他の案内を少し見せておく
         <br>■ 一定時間、手の動きがなかったら矢印の案内を表示する
